@@ -1,0 +1,1074 @@
+id,benchmark,function,passes,wcet
+0,syrk/syrk,init_array,"mem2reg,loop-unroll<O3> - lower-expect - speculative-execution - mldst-motion",25228514
+1,syrk/syrk,init_array,"loop(loop-idiom) - dse - loop-load-elim - loop(loop-deletion)",25228514
+2,syrk/syrk,init_array,"pgo-memop-opt - libcalls-shrinkwrap - loop-vectorize - alignment-from-assumptions - loop-load-elim - loop(loop-deletion)",25228514
+3,syrk/syrk,init_array,"lcssa",25228514
+4,syrk/syrk,init_array,"mldst-motion - slp-vectorizer - jump-threading - correlated-propagation",25228514
+5,syrk/syrk,init_array,"lcssa - jump-threading - lower-expect - libcalls-shrinkwrap - bdce - dse - bdce - div-rem-pairs - mem2reg - loop-simplify",25228514
+6,syrk/syrk,init_array,"slp-vectorizer - loop(loop-deletion) - loop(loop-idiom) - mem2reg - loop-simplify - mem2reg,loop-unroll<O3>",25228514
+7,syrk/syrk,init_array,"adce",25228514
+8,syrk/syrk,init_array,"dse - sroa - libcalls-shrinkwrap - float2int",25228514
+9,syrk/syrk,init_array,"pgo-memop-opt - lower-expect - loop(loop-idiom) - loop-distribute - float2int - adce",25228514
+10,syrk/syrk,init_array,"baseline",25213284
+11,syrk/syrk,kernel_syrk,"div-rem-pairs - mldst-motion - instcombine - instcombine",25871474
+12,syrk/syrk,kernel_syrk,"float2int - callsite-splitting - loop-mssa(licm) - correlated-propagation - pgo-memop-opt",21453644
+13,syrk/syrk,kernel_syrk,"libcalls-shrinkwrap - loop(loop-deletion) - mem2reg,loop-unroll<O3>",25871474
+14,syrk/syrk,kernel_syrk,"slp-vectorizer - aggressive-instcombine - reassociate - lower-constant-intrinsics - instsimplify - lower-expect - loop-distribute",25871474
+15,syrk/syrk,kernel_syrk,"lower-constant-intrinsics",25871474
+16,syrk/syrk,kernel_syrk,"loop(loop-idiom) - loop-distribute - bdce - alignment-from-assumptions - lower-constant-intrinsics",25871474
+17,syrk/syrk,kernel_syrk,"loop(loop-deletion) - div-rem-pairs - mldst-motion - float2int - loop(indvars) - loop(indvars) - gvn - jump-threading - slp-vectorizer - instcombine",25874654
+18,syrk/syrk,kernel_syrk,"libcalls-shrinkwrap",25871474
+19,syrk/syrk,kernel_syrk,"mem2reg - mem2reg,loop-unroll<O3>",25871474
+20,syrk/syrk,kernel_syrk,"dse - lcssa - aggressive-instcombine - instsimplify - reassociate - slp-vectorizer - pgo-memop-opt - bdce - loop-distribute - loop-vectorize",25871474
+21,syrk/syrk,print_array,"memcpyopt",21433514
+22,syrk/syrk,print_array,"instcombine - loop-mssa(licm) - dse",21407144
+23,syrk/syrk,print_array,"mem2reg,loop-unroll<O3>",21433514
+24,syrk/syrk,print_array,"sroa",21433514
+25,syrk/syrk,print_array,"instcombine - aggressive-instcombine - loop-simplify",21433514
+26,syrk/syrk,print_array,"memcpyopt - sroa",21433514
+27,syrk/syrk,print_array,"reassociate - adce - loop-distribute - loop-vectorize - loop-load-elim - loop-vectorize - lower-expect - pgo-memop-opt",21433514
+28,syrk/syrk,print_array,"lower-constant-intrinsics - loop-vectorize - callsite-splitting - float2int - loop-distribute - div-rem-pairs",21433514
+29,syrk/syrk,print_array,"loop-sink - pgo-memop-opt - bdce - loop-vectorize - lcssa - memcpyopt - mem2reg - dse",21433514
+30,syrk/syrk,print_array,"dse - lcssa - reassociate - aggressive-instcombine - loop-vectorize",21433514
+31,syrk/syrk,main,"mem2reg,loop-unroll<O3> - sccp",21407144
+32,syrk/syrk,main,"aggressive-instcombine - dse - bdce - loop(loop-deletion) - loop-distribute - memcpyopt - speculative-execution - adce - loop(loop-deletion)",21407224
+33,syrk/syrk,main,"callsite-splitting - loop(loop-idiom)",21407144
+34,syrk/syrk,main,"instsimplify - loop-distribute - dse - loop-load-elim - float2int - sroa - lower-expect - gvn - instsimplify - speculative-execution",21407144
+35,syrk/syrk,main,"sroa - loop(indvars) - reassociate - sccp - mldst-motion",21407144
+36,syrk/syrk,main,"loop-distribute - callsite-splitting - adce - instcombine - callsite-splitting - aggressive-instcombine",21407144
+37,syrk/syrk,main,"loop-vectorize - loop-load-elim - dse - lcssa - lower-expect - float2int - loop(loop-deletion) - loop-sink",21407144
+38,syrk/syrk,main,"loop-load-elim - loop(loop-idiom) - mem2reg,loop-unroll<O3> - sccp - dse - callsite-splitting - lcssa - loop-sink",21407144
+39,syrk/syrk,main,"mem2reg,loop-unroll<O3> - slp-vectorizer - mem2reg,loop-unroll<O3> - loop(indvars)",21407144
+40,syrk/syrk,main,"loop(loop-idiom)",21407144
+41,durbin/durbin,init_array,"loop(loop-deletion) - loop-simplify - loop-sink - loop(indvars) - lcssa",3237943
+42,durbin/durbin,init_array,"lower-constant-intrinsics - loop(indvars) - lcssa",3237943
+43,durbin/durbin,init_array,"jump-threading - instcombine - sroa - sccp - loop(loop-idiom) - aggressive-instcombine - loop-mssa(licm)",3237543
+44,durbin/durbin,init_array,"jump-threading - correlated-propagation - reassociate - bdce - gvn - dse - alignment-from-assumptions - lower-constant-intrinsics - correlated-propagation",3237943
+45,durbin/durbin,init_array,"pgo-memop-opt - loop-load-elim - loop-load-elim - bdce - loop(indvars) - loop-vectorize",3237943
+46,durbin/durbin,init_array,"mem2reg,loop-unroll<O3> - callsite-splitting - mem2reg - aggressive-instcombine - dse - sroa - pgo-memop-opt - correlated-propagation - float2int - loop-sink",3237943
+47,durbin/durbin,init_array,"loop-simplify - loop-simplify - bdce - float2int - loop-vectorize",3237943
+48,durbin/durbin,init_array,"slp-vectorizer - loop-sink - sccp - lower-constant-intrinsics - loop-sink - sroa - lcssa - mldst-motion",3237943
+49,durbin/durbin,init_array,"gvn",3237943
+50,durbin/durbin,init_array,"loop-simplify - lower-expect - loop-distribute - alignment-from-assumptions - instsimplify - loop-sink - lower-expect - float2int - mldst-motion",3237943
+51,durbin/durbin,init_array,"baseline",3237533
+52,durbin/durbin,kernel_durbin,"instcombine - aggressive-instcombine - float2int - correlated-propagation - slp-vectorizer",3122343
+53,durbin/durbin,kernel_durbin,"lower-expect - loop-vectorize - div-rem-pairs - alignment-from-assumptions - loop-mssa(licm)",3187943
+54,durbin/durbin,kernel_durbin,"alignment-from-assumptions - jump-threading - sroa - adce",3122343
+55,durbin/durbin,kernel_durbin,"loop-simplify - loop-vectorize - pgo-memop-opt - bdce - dse - memcpyopt",3187943
+56,durbin/durbin,kernel_durbin,"lower-expect - alignment-from-assumptions - aggressive-instcombine - mem2reg,loop-unroll<O3> - pgo-memop-opt",3187943
+57,durbin/durbin,kernel_durbin,"adce - jump-threading - lower-expect - alignment-from-assumptions - slp-vectorizer - sroa - loop-sink - gvn - loop-mssa(licm) - loop-simplify",3187943
+58,durbin/durbin,kernel_durbin,"loop-distribute - libcalls-shrinkwrap - loop-vectorize - mldst-motion",3187943
+59,durbin/durbin,kernel_durbin,"loop-load-elim - callsite-splitting - instcombine - float2int",3122343
+60,durbin/durbin,kernel_durbin,"loop-load-elim - loop-distribute - pgo-memop-opt - pgo-memop-opt - correlated-propagation - reassociate - lcssa - lower-expect",3188703
+61,durbin/durbin,kernel_durbin,"pgo-memop-opt - dse - loop(loop-idiom) - correlated-propagation - jump-threading - jump-threading - loop-mssa(licm) - sccp",3187943
+62,durbin/durbin,print_array,"speculative-execution - loop-distribute - correlated-propagation - lcssa - slp-vectorizer - lower-expect - speculative-execution - reassociate",3121523
+63,durbin/durbin,print_array,"loop-mssa(licm) - adce - lower-expect - div-rem-pairs",3121523
+64,durbin/durbin,print_array,"correlated-propagation - float2int - mem2reg - gvn - gvn - loop-simplify - loop-load-elim",3121523
+65,durbin/durbin,print_array,"jump-threading - loop-simplify - instcombine - sroa",3120293
+66,durbin/durbin,print_array,"jump-threading - libcalls-shrinkwrap - instsimplify - loop-sink - memcpyopt - pgo-memop-opt - div-rem-pairs",3121523
+67,durbin/durbin,print_array,"mem2reg - div-rem-pairs - speculative-execution - loop(loop-deletion) - aggressive-instcombine - memcpyopt - callsite-splitting - alignment-from-assumptions - gvn",3121523
+68,durbin/durbin,print_array,"libcalls-shrinkwrap - lower-expect - instsimplify - memcpyopt - libcalls-shrinkwrap - loop(loop-idiom)",3121523
+69,durbin/durbin,print_array,"sroa",3121523
+70,durbin/durbin,print_array,"reassociate - jump-threading - sccp - sccp - slp-vectorizer",3121523
+71,durbin/durbin,print_array,"sroa - gvn - sccp",3121523
+72,durbin/durbin,main,"sccp - loop(indvars)",3120293
+73,durbin/durbin,main,"lcssa - reassociate - mem2reg - loop-simplify - instsimplify - lcssa - reassociate - reassociate - mem2reg,loop-unroll<O3>",3120293
+74,durbin/durbin,main,"loop-simplify - loop(loop-idiom) - adce",3120293
+75,durbin/durbin,main,"loop(indvars) - mem2reg - loop-distribute - mem2reg,loop-unroll<O3> - loop-vectorize - correlated-propagation - libcalls-shrinkwrap",3120293
+76,durbin/durbin,main,"loop-vectorize - float2int - correlated-propagation - slp-vectorizer - lcssa - adce - loop(loop-idiom) - loop(loop-deletion)",3120293
+77,durbin/durbin,main,"adce - jump-threading - loop-load-elim - lower-constant-intrinsics - correlated-propagation - div-rem-pairs - mldst-motion - pgo-memop-opt - pgo-memop-opt - mldst-motion",3120293
+78,durbin/durbin,main,"lower-expect - lcssa - loop-load-elim - loop-simplify - memcpyopt - aggressive-instcombine - speculative-execution - pgo-memop-opt - instcombine",3120293
+79,durbin/durbin,main,"speculative-execution - instsimplify - loop(loop-deletion) - correlated-propagation - slp-vectorizer - sroa - instsimplify - lower-constant-intrinsics",3120293
+80,durbin/durbin,main,"mem2reg - loop-vectorize - loop-mssa(licm)",3120293
+81,durbin/durbin,main,"alignment-from-assumptions - loop-vectorize - instsimplify - correlated-propagation - mem2reg,loop-unroll<O3> - div-rem-pairs - loop-distribute",3120293
+82,fdtd-2d/fdtd-2d,init_array,"correlated-propagation - slp-vectorizer - loop-distribute - sroa",45652592
+83,fdtd-2d/fdtd-2d,init_array,"loop-sink - adce - float2int - sroa - sccp - loop(loop-idiom) - loop-simplify",45652592
+84,fdtd-2d/fdtd-2d,init_array,"loop-load-elim - loop-load-elim - reassociate - loop-load-elim - sccp - gvn - dse - memcpyopt",45652592
+85,fdtd-2d/fdtd-2d,init_array,"float2int - div-rem-pairs - slp-vectorizer - loop-sink - div-rem-pairs - loop-vectorize - instcombine - slp-vectorizer - float2int - callsite-splitting",45652592
+86,fdtd-2d/fdtd-2d,init_array,"aggressive-instcombine - memcpyopt - div-rem-pairs - lcssa",45652592
+87,fdtd-2d/fdtd-2d,init_array,"loop-vectorize - loop(loop-deletion) - loop-load-elim",45652592
+88,fdtd-2d/fdtd-2d,init_array,"instcombine - loop-simplify - memcpyopt - dse - alignment-from-assumptions - instsimplify - dse - slp-vectorizer - adce - loop-distribute",45652592
+89,fdtd-2d/fdtd-2d,init_array,"loop-distribute - gvn - loop-mssa(licm) - dse - jump-threading - loop-vectorize - mldst-motion - reassociate - memcpyopt - loop(indvars)",45313214
+90,fdtd-2d/fdtd-2d,init_array,"bdce - slp-vectorizer - loop-mssa(licm) - adce - instsimplify - mem2reg,loop-unroll<O3> - float2int - correlated-propagation - sccp",45309659
+91,fdtd-2d/fdtd-2d,init_array,"correlated-propagation - mem2reg - mem2reg - speculative-execution - loop-vectorize - loop-mssa(licm)",45315856
+92,fdtd-2d/fdtd-2d,init_array,"baseline",45627644
+93,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"adce - memcpyopt - loop-mssa(licm) - dse - alignment-from-assumptions - loop(loop-deletion) - lower-expect - instcombine",48908849
+94,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"lower-expect - mem2reg,loop-unroll<O3>",46909229
+95,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"loop-sink - alignment-from-assumptions - libcalls-shrinkwrap",47086279
+96,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"loop-distribute - lower-constant-intrinsics - loop(loop-deletion) - instcombine",47086279
+97,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"instsimplify - div-rem-pairs - pgo-memop-opt - lower-constant-intrinsics - loop-distribute - loop-vectorize - jump-threading - alignment-from-assumptions",47086279
+98,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"correlated-propagation - mldst-motion - div-rem-pairs - slp-vectorizer - loop-sink - loop-distribute - memcpyopt",47086279
+99,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"pgo-memop-opt - correlated-propagation - loop-distribute - adce - div-rem-pairs - aggressive-instcombine",47086279
+100,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"float2int - slp-vectorizer - libcalls-shrinkwrap - instsimplify - memcpyopt",47086279
+101,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"mldst-motion - mldst-motion - loop(loop-idiom) - gvn - adce",47086279
+102,fdtd-2d/fdtd-2d,kernel_fdtd_2d,"speculative-execution - lower-constant-intrinsics - lcssa - slp-vectorizer - loop-mssa(licm) - speculative-execution - mem2reg,loop-unroll<O3> - libcalls-shrinkwrap",46192949
+103,fdtd-2d/fdtd-2d,print_array,"loop-mssa(licm) - loop-distribute - pgo-memop-opt - mem2reg,loop-unroll<O3> - reassociate - reassociate - speculative-execution - pgo-memop-opt - dse",46005209
+104,fdtd-2d/fdtd-2d,print_array,"loop-mssa(licm) - adce - reassociate - libcalls-shrinkwrap - pgo-memop-opt - loop-vectorize - mldst-motion - loop-distribute - aggressive-instcombine - loop-load-elim",46005209
+105,fdtd-2d/fdtd-2d,print_array,"loop(loop-deletion) - gvn - slp-vectorizer - loop-distribute - loop-mssa(licm) - sccp - lower-constant-intrinsics - mem2reg,loop-unroll<O3> - lower-expect - loop(loop-deletion)",46005209
+106,fdtd-2d/fdtd-2d,print_array,"jump-threading",46152059
+107,fdtd-2d/fdtd-2d,print_array,"alignment-from-assumptions - instsimplify - correlated-propagation - adce - callsite-splitting - loop(indvars) - lcssa - mldst-motion",46152059
+108,fdtd-2d/fdtd-2d,print_array,"loop(loop-idiom) - pgo-memop-opt - mldst-motion - aggressive-instcombine - libcalls-shrinkwrap - loop(indvars) - mem2reg - loop(loop-idiom) - jump-threading - loop-simplify",46152059
+109,fdtd-2d/fdtd-2d,print_array,"lcssa - loop(loop-idiom) - pgo-memop-opt - float2int - div-rem-pairs",46152059
+110,fdtd-2d/fdtd-2d,print_array,"lcssa",46152059
+111,fdtd-2d/fdtd-2d,print_array,"aggressive-instcombine - mem2reg,loop-unroll<O3> - sroa - lcssa - speculative-execution - div-rem-pairs - loop-simplify - sccp - loop-simplify",46152059
+112,fdtd-2d/fdtd-2d,print_array,"adce - slp-vectorizer - sroa - gvn - lcssa",46152059
+113,fdtd-2d/fdtd-2d,main,"gvn - sroa - instcombine - loop-load-elim - mldst-motion - div-rem-pairs - aggressive-instcombine - jump-threading - pgo-memop-opt - correlated-propagation",46005209
+114,fdtd-2d/fdtd-2d,main,"loop(loop-deletion) - instcombine - memcpyopt - sccp - sccp - mem2reg - instcombine - dse",46005209
+115,fdtd-2d/fdtd-2d,main,"loop-mssa(licm) - mldst-motion",46005209
+116,fdtd-2d/fdtd-2d,main,"loop-vectorize - loop(loop-idiom) - mldst-motion - mem2reg,loop-unroll<O3>",46005209
+117,fdtd-2d/fdtd-2d,main,"pgo-memop-opt - lcssa - adce - adce - div-rem-pairs - lower-constant-intrinsics - instcombine - dse",46005209
+118,fdtd-2d/fdtd-2d,main,"gvn - mem2reg - mem2reg,loop-unroll<O3> - slp-vectorizer - gvn - jump-threading - loop-sink - slp-vectorizer - loop-sink - instsimplify",46005209
+119,fdtd-2d/fdtd-2d,main,"libcalls-shrinkwrap - alignment-from-assumptions - mldst-motion - loop-mssa(licm) - loop(indvars) - float2int - loop-distribute",46005209
+120,fdtd-2d/fdtd-2d,main,"jump-threading - instsimplify - lower-constant-intrinsics - aggressive-instcombine - loop-load-elim",46005209
+121,fdtd-2d/fdtd-2d,main,"loop-vectorize - loop-mssa(licm) - lcssa - mem2reg - loop(loop-idiom) - jump-threading - alignment-from-assumptions",46005209
+122,fdtd-2d/fdtd-2d,main,"pgo-memop-opt - dse - callsite-splitting",46005209
+123,gemver/gemver,init_array,"mldst-motion - instcombine - mem2reg,loop-unroll<O3> - loop-distribute - loop-vectorize - callsite-splitting",6883001
+124,gemver/gemver,init_array,"loop-simplify",6888044
+125,gemver/gemver,init_array,"loop-sink - speculative-execution - mem2reg,loop-unroll<O3> - loop-simplify - loop-mssa(licm)",6596348
+126,gemver/gemver,init_array,"bdce",6888044
+127,gemver/gemver,init_array,"loop-load-elim - jump-threading - loop-simplify",6888044
+128,gemver/gemver,init_array,"float2int - instsimplify - dse - correlated-propagation",6888044
+129,gemver/gemver,init_array,"loop-mssa(licm) - loop-simplify - lcssa - speculative-execution - lower-constant-intrinsics - callsite-splitting - sroa - mem2reg,loop-unroll<O3>",6596348
+130,gemver/gemver,init_array,"pgo-memop-opt - memcpyopt - sroa - loop(loop-idiom) - sccp - slp-vectorizer - instsimplify - sccp",6888044
+131,gemver/gemver,init_array,"loop(loop-idiom) - adce - loop(loop-idiom) - loop-mssa(licm) - memcpyopt",6596348
+132,gemver/gemver,init_array,"loop-mssa(licm) - div-rem-pairs - reassociate - lcssa",6596348
+133,gemver/gemver,init_array,"baseline",6872054
+134,gemver/gemver,kernel_gemver,"sroa - slp-vectorizer - aggressive-instcombine - loop(loop-deletion) - loop-mssa(licm)",6312978
+135,gemver/gemver,kernel_gemver,"bdce",6748908
+136,gemver/gemver,kernel_gemver,"dse - aggressive-instcombine - float2int - div-rem-pairs - gvn - loop-distribute - slp-vectorizer - loop-mssa(licm)",6295348
+137,gemver/gemver,kernel_gemver,"loop(loop-deletion) - aggressive-instcombine - sccp - float2int - sccp - mldst-motion - memcpyopt - sroa - loop(indvars) - aggressive-instcombine",6748908
+138,gemver/gemver,kernel_gemver,"speculative-execution - alignment-from-assumptions",6748908
+139,gemver/gemver,kernel_gemver,"loop-load-elim",6748908
+140,gemver/gemver,kernel_gemver,"sroa - bdce - loop-sink - adce - loop-vectorize",6748908
+141,gemver/gemver,kernel_gemver,"jump-threading - mem2reg - mem2reg - loop-load-elim - loop-vectorize - speculative-execution - lower-constant-intrinsics - instsimplify",6748908
+142,gemver/gemver,kernel_gemver,"lcssa - loop(indvars) - reassociate - jump-threading - loop(indvars) - mem2reg,loop-unroll<O3> - instsimplify - reassociate - adce - libcalls-shrinkwrap",6748908
+143,gemver/gemver,kernel_gemver,"lower-expect",6748908
+144,gemver/gemver,print_array,"pgo-memop-opt - gvn - loop-mssa(licm) - mldst-motion - aggressive-instcombine - sccp - float2int - instsimplify",6294528
+145,gemver/gemver,print_array,"float2int - mem2reg,loop-unroll<O3> - loop-load-elim - sccp - instsimplify - loop-vectorize - loop(loop-deletion) - jump-threading",6294528
+146,gemver/gemver,print_array,"float2int - libcalls-shrinkwrap - memcpyopt - aggressive-instcombine",6294528
+147,gemver/gemver,print_array,"alignment-from-assumptions - libcalls-shrinkwrap - sccp - float2int - loop(loop-idiom) - mem2reg,loop-unroll<O3> - memcpyopt - libcalls-shrinkwrap - loop-load-elim - alignment-from-assumptions",6294528
+148,gemver/gemver,print_array,"callsite-splitting - mldst-motion - loop-mssa(licm) - instsimplify - loop-vectorize - lower-constant-intrinsics - loop-mssa(licm) - loop-simplify - jump-threading",6294528
+149,gemver/gemver,print_array,"reassociate - alignment-from-assumptions - dse - lower-expect",6294528
+150,gemver/gemver,print_array,"instcombine - sroa - dse - float2int - loop-vectorize - div-rem-pairs - alignment-from-assumptions - aggressive-instcombine - lcssa",6293298
+151,gemver/gemver,print_array,"sccp - speculative-execution",6294528
+152,gemver/gemver,print_array,"lcssa - lower-constant-intrinsics - instcombine",6293298
+153,gemver/gemver,print_array,"slp-vectorizer - loop-simplify - mldst-motion - dse - instcombine - dse - instsimplify",6293298
+154,gemver/gemver,main,"div-rem-pairs - dse - speculative-execution",6293378
+155,gemver/gemver,main,"callsite-splitting - dse - sroa - loop(loop-deletion) - div-rem-pairs - dse - gvn - dse",6293298
+156,gemver/gemver,main,"loop-distribute - aggressive-instcombine - sroa - slp-vectorizer - mem2reg - loop-load-elim - loop-mssa(licm) - adce - loop(loop-deletion)",6293298
+157,gemver/gemver,main,"alignment-from-assumptions - pgo-memop-opt - bdce - loop(loop-deletion) - speculative-execution - alignment-from-assumptions - sroa - instsimplify",6293298
+158,gemver/gemver,main,"lcssa - memcpyopt - dse - bdce - speculative-execution - loop(loop-idiom) - correlated-propagation - memcpyopt",6293378
+159,gemver/gemver,main,"loop-load-elim - jump-threading - mldst-motion - mem2reg,loop-unroll<O3> - loop-load-elim - mem2reg,loop-unroll<O3> - mem2reg - float2int - loop-load-elim",6293298
+160,gemver/gemver,main,"float2int - instsimplify - bdce - bdce - aggressive-instcombine - aggressive-instcombine - loop-load-elim - mldst-motion - lower-expect",6293298
+161,gemver/gemver,main,"instsimplify - libcalls-shrinkwrap - instcombine - alignment-from-assumptions - speculative-execution - reassociate - jump-threading - loop-sink",6293298
+162,gemver/gemver,main,"instsimplify",6293298
+163,gemver/gemver,main,"loop(loop-deletion) - libcalls-shrinkwrap - loop-simplify - mem2reg,loop-unroll<O3> - sccp - libcalls-shrinkwrap - loop-load-elim",6293298
+164,atax/atax,polybench_flush_cache,"loop-vectorize - mem2reg - instsimplify - div-rem-pairs - loop-vectorize - loop-load-elim - alignment-from-assumptions - loop-distribute - instcombine",4099159
+165,atax/atax,polybench_flush_cache,"lcssa - speculative-execution",4099159
+166,atax/atax,polybench_flush_cache,"aggressive-instcombine - lower-constant-intrinsics - lower-constant-intrinsics",4099159
+167,atax/atax,polybench_flush_cache,"lower-constant-intrinsics - mem2reg - loop-distribute - memcpyopt - sroa - instcombine - bdce",4099159
+168,atax/atax,polybench_flush_cache,"callsite-splitting - loop-simplify - instcombine",4099159
+169,atax/atax,polybench_flush_cache,"alignment-from-assumptions - lower-expect",4099159
+170,atax/atax,polybench_flush_cache,"lcssa - loop(indvars) - float2int - sroa - loop(loop-deletion) - loop-distribute - callsite-splitting",4099159
+171,atax/atax,polybench_flush_cache,"loop-sink - instcombine - loop-distribute - gvn - libcalls-shrinkwrap - sroa - loop-load-elim - jump-threading - instsimplify - loop-sink",4099159
+172,atax/atax,polybench_flush_cache,"lower-constant-intrinsics - correlated-propagation - dse",4099159
+173,atax/atax,polybench_flush_cache,"lcssa - aggressive-instcombine - loop(loop-idiom) - float2int - loop(loop-deletion) - lcssa - sroa - loop-vectorize - speculative-execution",4099159
+174,atax/atax,polybench_flush_cache,"baseline",4099159
+175,atax/atax,polybench_prepare_instruments,"memcpyopt - lcssa",4099159
+176,atax/atax,polybench_prepare_instruments,"div-rem-pairs - loop(loop-idiom) - instcombine - loop-vectorize",4099159
+177,atax/atax,polybench_prepare_instruments,"correlated-propagation - sccp - sccp - bdce - memcpyopt - lcssa - callsite-splitting - jump-threading",4099159
+178,atax/atax,polybench_prepare_instruments,"callsite-splitting",4099159
+179,atax/atax,polybench_prepare_instruments,"loop(indvars) - loop(loop-idiom) - bdce - loop-load-elim",4099159
+180,atax/atax,polybench_prepare_instruments,"correlated-propagation - dse - aggressive-instcombine - instcombine - lcssa",4099159
+181,atax/atax,polybench_prepare_instruments,"gvn - lower-expect - alignment-from-assumptions - mem2reg,loop-unroll<O3> - lower-expect - sccp",4099159
+182,atax/atax,polybench_prepare_instruments,"div-rem-pairs",4099159
+183,atax/atax,polybench_prepare_instruments,"loop-vectorize - instsimplify - dse",4099159
+184,atax/atax,polybench_prepare_instruments,"div-rem-pairs - bdce - sccp - loop-sink - loop(indvars) - aggressive-instcombine - loop-mssa(licm) - gvn",4099159
+185,atax/atax,polybench_timer_start,"loop(loop-deletion) - loop-distribute - gvn",4099159
+186,atax/atax,polybench_timer_start,"bdce - loop-vectorize",4099159
+187,atax/atax,polybench_timer_start,"speculative-execution - jump-threading - loop-vectorize - loop-mssa(licm) - mem2reg,loop-unroll<O3> - alignment-from-assumptions - gvn",4099159
+188,atax/atax,polybench_timer_start,"loop(loop-deletion) - mem2reg - loop-sink - lcssa - loop-load-elim",4099159
+189,atax/atax,polybench_timer_start,"lower-constant-intrinsics - div-rem-pairs - sccp - mem2reg - speculative-execution - float2int - dse - loop-vectorize",4099159
+190,atax/atax,polybench_timer_start,"alignment-from-assumptions - lcssa - gvn - speculative-execution - instcombine - loop-simplify - loop-sink - loop-sink",4099159
+191,atax/atax,polybench_timer_start,"loop-load-elim - sroa - aggressive-instcombine - gvn - adce - float2int - loop-simplify - loop-distribute - pgo-memop-opt - memcpyopt",4099159
+192,atax/atax,polybench_timer_start,"mldst-motion - loop-load-elim - float2int - pgo-memop-opt - libcalls-shrinkwrap - sccp - loop-simplify - gvn - loop-simplify",4099159
+193,atax/atax,polybench_timer_start,"lcssa - instcombine - instcombine - callsite-splitting - loop-simplify - loop-distribute - mldst-motion - dse - mem2reg",4099159
+194,atax/atax,polybench_timer_start,"bdce - loop-vectorize - slp-vectorizer - bdce - reassociate - mem2reg,loop-unroll<O3> - gvn - bdce - loop-mssa(licm) - slp-vectorizer",4099159
+195,atax/atax,polybench_timer_stop,"callsite-splitting - loop-vectorize - gvn - loop(loop-idiom) - loop-simplify - mem2reg,loop-unroll<O3>",4099159
+196,atax/atax,polybench_timer_stop,"bdce",4099159
+197,atax/atax,polybench_timer_stop,"loop-simplify - bdce - memcpyopt",4099159
+198,atax/atax,polybench_timer_stop,"div-rem-pairs - loop-distribute - mem2reg,loop-unroll<O3> - float2int - loop-mssa(licm) - memcpyopt - slp-vectorizer - correlated-propagation - loop-sink - bdce",4099159
+199,atax/atax,polybench_timer_stop,"speculative-execution - loop-distribute - mldst-motion - loop-mssa(licm) - instcombine - loop-simplify - speculative-execution - sroa - adce",4099159
+200,atax/atax,polybench_timer_stop,"pgo-memop-opt - instcombine - float2int",4099159
+201,atax/atax,polybench_timer_stop,"loop-simplify - mem2reg,loop-unroll<O3> - callsite-splitting - sroa - instsimplify - mem2reg,loop-unroll<O3> - aggressive-instcombine - instcombine - libcalls-shrinkwrap - gvn",4099159
+202,atax/atax,polybench_timer_stop,"lower-constant-intrinsics - alignment-from-assumptions - loop-vectorize - gvn - slp-vectorizer - float2int - loop-vectorize",4099159
+203,atax/atax,polybench_timer_stop,"loop-vectorize",4099159
+204,atax/atax,polybench_timer_stop,"aggressive-instcombine - memcpyopt - instsimplify - loop(loop-deletion) - loop-mssa(licm) - sccp - div-rem-pairs - jump-threading - gvn",4099159
+205,atax/atax,polybench_timer_print,"speculative-execution - sroa",4099159
+206,atax/atax,polybench_timer_print,"loop-sink - loop(loop-deletion) - alignment-from-assumptions - gvn - mem2reg - memcpyopt - mem2reg - gvn - loop(indvars) - jump-threading",4099159
+207,atax/atax,polybench_timer_print,"sroa - div-rem-pairs - loop-load-elim - loop-mssa(licm) - loop-distribute - adce - dse - loop-sink - loop(indvars)",4099159
+208,atax/atax,polybench_timer_print,"instcombine - lower-constant-intrinsics - slp-vectorizer - pgo-memop-opt - reassociate - div-rem-pairs - slp-vectorizer",4099159
+209,atax/atax,polybench_timer_print,"sccp - gvn - lower-expect - instcombine - correlated-propagation - pgo-memop-opt - lcssa",4099159
+210,atax/atax,polybench_timer_print,"jump-threading - loop-distribute",4099159
+211,atax/atax,polybench_timer_print,"jump-threading",4099159
+212,atax/atax,polybench_timer_print,"jump-threading - div-rem-pairs - float2int - lower-expect - float2int - sroa",4099159
+213,atax/atax,polybench_timer_print,"loop-sink - loop-load-elim - mem2reg - mldst-motion - mldst-motion - aggressive-instcombine - libcalls-shrinkwrap - loop-vectorize",4099159
+214,atax/atax,polybench_timer_print,"loop-simplify - jump-threading - sccp",4099159
+215,atax/atax,polybench_free_data,"loop(loop-deletion) - loop(loop-deletion) - reassociate - bdce - jump-threading - alignment-from-assumptions - float2int - loop-simplify - instsimplify",4099159
+216,atax/atax,polybench_free_data,"loop(indvars) - loop(loop-idiom) - loop-simplify - bdce - speculative-execution - loop(loop-idiom)",4099159
+217,atax/atax,polybench_free_data,"lower-expect - instcombine - callsite-splitting - sroa - libcalls-shrinkwrap - mem2reg,loop-unroll<O3> - aggressive-instcombine - loop-vectorize - lower-expect",4099159
+218,atax/atax,polybench_free_data,"loop(loop-deletion) - loop-sink",4099159
+219,atax/atax,polybench_free_data,"bdce - callsite-splitting - gvn - gvn - loop-vectorize - dse",4099159
+220,atax/atax,polybench_free_data,"dse - mem2reg - loop(loop-deletion) - loop-sink - correlated-propagation - instcombine - float2int - gvn",4099159
+221,atax/atax,polybench_free_data,"loop-mssa(licm) - aggressive-instcombine - loop-mssa(licm) - loop-load-elim - reassociate - reassociate",4099159
+222,atax/atax,polybench_free_data,"reassociate",4099159
+223,atax/atax,polybench_free_data,"gvn",4099159
+224,atax/atax,polybench_free_data,"loop(indvars) - sccp - mem2reg - mem2reg - mldst-motion - div-rem-pairs",4099159
+225,atax/atax,polybench_alloc_data,"adce - loop-mssa(licm)",4099159
+226,atax/atax,polybench_alloc_data,"loop(indvars) - correlated-propagation - reassociate - float2int - instcombine - instsimplify",4099159
+227,atax/atax,polybench_alloc_data,"float2int - memcpyopt - lower-constant-intrinsics - slp-vectorizer",4099159
+228,atax/atax,polybench_alloc_data,"reassociate - libcalls-shrinkwrap",4099159
+229,atax/atax,polybench_alloc_data,"loop-sink - aggressive-instcombine - sroa",4099159
+230,atax/atax,polybench_alloc_data,"loop-vectorize - gvn",4099159
+231,atax/atax,polybench_alloc_data,"slp-vectorizer - mldst-motion - instcombine - mem2reg - slp-vectorizer - adce - reassociate - loop(loop-idiom) - loop(loop-idiom) - float2int",4099159
+232,atax/atax,polybench_alloc_data,"instcombine - correlated-propagation - alignment-from-assumptions - mem2reg,loop-unroll<O3> - lower-constant-intrinsics - gvn - correlated-propagation - lower-expect",4099159
+233,atax/atax,polybench_alloc_data,"mem2reg,loop-unroll<O3> - reassociate - pgo-memop-opt - loop-distribute",4099159
+234,atax/atax,polybench_alloc_data,"memcpyopt - alignment-from-assumptions",4099159
+235,atax/atax,xmalloc,"loop-distribute",4099159
+236,atax/atax,xmalloc,"lower-expect - gvn - loop-vectorize - loop(loop-deletion) - lower-constant-intrinsics - loop-mssa(licm) - loop-mssa(licm) - loop-sink - loop-mssa(licm) - libcalls-shrinkwrap",4099159
+237,atax/atax,xmalloc,"loop-vectorize",4099159
+238,atax/atax,xmalloc,"div-rem-pairs - callsite-splitting - sccp",4099159
+239,atax/atax,xmalloc,"loop-distribute - mem2reg - memcpyopt",4099159
+240,atax/atax,xmalloc,"instcombine - mldst-motion - correlated-propagation - lcssa - bdce - jump-threading",4099159
+241,atax/atax,xmalloc,"alignment-from-assumptions - gvn - loop-mssa(licm) - instcombine - loop-load-elim - mem2reg,loop-unroll<O3> - memcpyopt - correlated-propagation - instcombine",4099159
+242,atax/atax,xmalloc,"speculative-execution - loop-load-elim - gvn - div-rem-pairs - loop-load-elim - loop(indvars) - mem2reg - slp-vectorizer",4099159
+243,atax/atax,xmalloc,"slp-vectorizer - slp-vectorizer - aggressive-instcombine - jump-threading - dse",4099159
+244,atax/atax,xmalloc,"memcpyopt - loop(loop-deletion) - loop-load-elim - reassociate",4099159
+245,atax/atax,init_array,"callsite-splitting - loop(loop-idiom)",4116479
+246,atax/atax,init_array,"alignment-from-assumptions - sccp - reassociate - dse",4116479
+247,atax/atax,init_array,"loop-distribute - lcssa - aggressive-instcombine - lower-expect - instsimplify - bdce",4116479
+248,atax/atax,init_array,"float2int - loop-distribute",4116479
+249,atax/atax,init_array,"loop-vectorize - sccp - loop(indvars) - lcssa - jump-threading - adce - loop-mssa(licm) - mldst-motion",3787162
+250,atax/atax,init_array,"sroa",4116479
+251,atax/atax,init_array,"lower-constant-intrinsics - mem2reg,loop-unroll<O3> - pgo-memop-opt - lcssa - loop-distribute",4116479
+252,atax/atax,init_array,"loop(loop-deletion) - loop-load-elim - slp-vectorizer - loop-mssa(licm) - alignment-from-assumptions - callsite-splitting - sroa",3787162
+253,atax/atax,init_array,"mem2reg,loop-unroll<O3> - alignment-from-assumptions - loop-sink - mem2reg,loop-unroll<O3> - sroa - loop-simplify",4116479
+254,atax/atax,init_array,"bdce - libcalls-shrinkwrap - sroa - loop(indvars)",4116479
+255,atax/atax,kernel_atax,"pgo-memop-opt - reassociate - sroa - mldst-motion - instcombine - mem2reg - loop(loop-idiom) - bdce",3936082
+256,atax/atax,kernel_atax,"gvn - callsite-splitting - lcssa - gvn - instsimplify - mldst-motion",3841702
+257,atax/atax,kernel_atax,"instcombine - lower-expect - mem2reg,loop-unroll<O3> - lower-constant-intrinsics - loop(loop-idiom) - alignment-from-assumptions - loop-distribute - correlated-propagation - slp-vectorizer - aggressive-instcombine",3926522
+258,atax/atax,kernel_atax,"reassociate - loop-distribute - lower-constant-intrinsics - loop-vectorize - loop-simplify - loop(indvars) - loop-mssa(licm)",3633832
+259,atax/atax,kernel_atax,"loop-simplify - correlated-propagation",3936082
+260,atax/atax,kernel_atax,"lower-constant-intrinsics - float2int - lower-constant-intrinsics",3936082
+261,atax/atax,kernel_atax,"bdce - memcpyopt - jump-threading - loop-sink",3936082
+262,atax/atax,kernel_atax,"mem2reg,loop-unroll<O3>",3926522
+263,atax/atax,kernel_atax,"loop(loop-idiom) - loop(loop-deletion) - reassociate - loop(loop-deletion) - gvn - instcombine - mem2reg,loop-unroll<O3> - instcombine",3832142
+264,atax/atax,kernel_atax,"loop-simplify - alignment-from-assumptions - loop-vectorize - correlated-propagation - sccp - loop-vectorize - aggressive-instcombine - sroa - lcssa - loop-vectorize",3936082
+265,atax/atax,print_array,"lcssa - div-rem-pairs - float2int - pgo-memop-opt - lcssa - instcombine - speculative-execution - libcalls-shrinkwrap - instsimplify",3631682
+266,atax/atax,print_array,"div-rem-pairs - reassociate - loop-distribute - loop-load-elim - loop(indvars) - alignment-from-assumptions",3631682
+267,atax/atax,print_array,"dse - lower-expect - bdce - loop(loop-idiom)",3632972
+268,atax/atax,print_array,"jump-threading",3632972
+269,atax/atax,print_array,"memcpyopt - mem2reg,loop-unroll<O3> - loop(loop-idiom) - loop-distribute - aggressive-instcombine - lower-expect - sccp - adce",3632972
+270,atax/atax,print_array,"adce",3632972
+271,atax/atax,print_array,"pgo-memop-opt - mem2reg,loop-unroll<O3> - loop-vectorize - instcombine - loop-mssa(licm) - dse",3631682
+272,atax/atax,print_array,"loop-load-elim - lower-expect - loop-distribute - instcombine - sroa - float2int - reassociate - loop-load-elim - dse - loop-vectorize",3631682
+273,atax/atax,print_array,"sroa - slp-vectorizer - alignment-from-assumptions - loop(loop-deletion) - loop(indvars) - aggressive-instcombine - loop-distribute - loop-simplify - div-rem-pairs - memcpyopt",3631682
+274,atax/atax,print_array,"loop(indvars) - alignment-from-assumptions - alignment-from-assumptions",3631682
+275,atax/atax,rtclock,"callsite-splitting - lcssa - mem2reg - loop(loop-idiom) - memcpyopt - speculative-execution",3631682
+276,atax/atax,rtclock,"loop-vectorize - correlated-propagation - adce",3631682
+277,atax/atax,rtclock,"speculative-execution - adce - loop(indvars) - loop-sink - jump-threading - libcalls-shrinkwrap",3631682
+278,atax/atax,rtclock,"mem2reg,loop-unroll<O3> - memcpyopt - instsimplify",3631682
+279,atax/atax,rtclock,"mldst-motion - speculative-execution - loop-vectorize - loop-sink - lower-expect - float2int - sroa - pgo-memop-opt",3631682
+280,atax/atax,rtclock,"loop-simplify",3631682
+281,atax/atax,rtclock,"div-rem-pairs - slp-vectorizer - speculative-execution - reassociate - loop-distribute - jump-threading - instcombine - loop-mssa(licm)",3631682
+282,atax/atax,rtclock,"bdce - aggressive-instcombine",3631682
+283,atax/atax,rtclock,"libcalls-shrinkwrap - div-rem-pairs - instsimplify - instcombine",3631682
+284,atax/atax,rtclock,"loop-vectorize",3631682
+285,atax/atax,main,"loop-load-elim - sccp - adce",3631682
+286,atax/atax,main,"memcpyopt - slp-vectorizer - loop(loop-deletion) - jump-threading - loop(indvars) - instcombine - loop-sink - lower-expect - bdce - callsite-splitting",3631682
+287,atax/atax,main,"loop-mssa(licm) - sroa - float2int",3631682
+288,atax/atax,main,"loop(indvars) - correlated-propagation - loop(loop-idiom) - loop(loop-deletion) - float2int - libcalls-shrinkwrap - pgo-memop-opt - sccp - mem2reg",3631682
+289,atax/atax,main,"memcpyopt - bdce - pgo-memop-opt - instcombine - bdce - reassociate - pgo-memop-opt - lower-constant-intrinsics - loop-load-elim",3631682
+290,atax/atax,main,"mem2reg,loop-unroll<O3>",3631682
+291,atax/atax,main,"float2int - loop(loop-deletion) - aggressive-instcombine - div-rem-pairs - gvn - div-rem-pairs - sroa",3631682
+292,atax/atax,main,"loop(indvars) - float2int - loop-vectorize - loop-mssa(licm) - float2int - sroa",3631682
+293,atax/atax,main,"correlated-propagation - lcssa - memcpyopt - loop-vectorize - jump-threading",3631682
+294,atax/atax,main,"lcssa - dse - sccp - adce - lower-constant-intrinsics - lower-expect - sccp - instcombine",3631682
+295,mvt/mvt,init_array,"lcssa - mldst-motion - correlated-propagation - loop(loop-deletion) - callsite-splitting",4152243
+296,mvt/mvt,init_array,"loop(loop-idiom) - loop(loop-idiom) - memcpyopt - loop-vectorize - jump-threading - bdce - lower-constant-intrinsics - lower-expect - mem2reg,loop-unroll<O3>",4152243
+297,mvt/mvt,init_array,"dse - aggressive-instcombine - bdce - loop(loop-deletion) - alignment-from-assumptions - loop-vectorize - aggressive-instcombine - memcpyopt - div-rem-pairs - aggressive-instcombine",4152243
+298,mvt/mvt,init_array,"lower-expect",4152243
+299,mvt/mvt,init_array,"bdce - lcssa - float2int - loop-simplify - loop(loop-deletion) - loop(loop-idiom) - alignment-from-assumptions - instcombine",4152243
+300,mvt/mvt,init_array,"div-rem-pairs - speculative-execution - lcssa - sroa - loop(loop-deletion)",4152243
+301,mvt/mvt,init_array,"loop(loop-idiom) - adce - loop-vectorize",4152243
+302,mvt/mvt,init_array,"loop(indvars) - aggressive-instcombine - correlated-propagation - pgo-memop-opt - lower-expect - float2int - mem2reg - gvn",4009645
+303,mvt/mvt,init_array,"lcssa - loop-sink - pgo-memop-opt - bdce - lower-constant-intrinsics - slp-vectorizer",4152243
+304,mvt/mvt,init_array,"speculative-execution - loop-load-elim - loop(indvars) - loop-sink - mem2reg - pgo-memop-opt - loop-load-elim - pgo-memop-opt - div-rem-pairs",4152243
+305,mvt/mvt,init_array,"baseline",4136253
+306,mvt/mvt,kernel_mvt,"adce - lower-expect - jump-threading - loop-distribute - float2int - loop-mssa(licm) - mem2reg,loop-unroll<O3> - loop-simplify - div-rem-pairs - lower-expect",3865715
+307,mvt/mvt,kernel_mvt,"loop(loop-deletion) - float2int - adce",4109315
+308,mvt/mvt,kernel_mvt,"adce - adce - loop-sink - loop-mssa(licm) - aggressive-instcombine - loop-load-elim - aggressive-instcombine - speculative-execution - aggressive-instcombine - jump-threading",3865715
+309,mvt/mvt,kernel_mvt,"sroa - adce - bdce - loop(loop-idiom) - mem2reg,loop-unroll<O3> - lcssa - mem2reg - instsimplify - slp-vectorizer",4109315
+310,mvt/mvt,kernel_mvt,"speculative-execution - mem2reg - sroa",4109315
+311,mvt/mvt,kernel_mvt,"loop(loop-deletion) - loop-vectorize - sccp - aggressive-instcombine - loop(loop-idiom) - loop-mssa(licm) - loop-mssa(licm) - loop-distribute",3865715
+312,mvt/mvt,kernel_mvt,"alignment-from-assumptions - loop-mssa(licm) - gvn - float2int - speculative-execution - instsimplify - correlated-propagation",3865715
+313,mvt/mvt,kernel_mvt,"loop(indvars) - sccp - bdce - lower-constant-intrinsics - loop(indvars) - loop-mssa(licm) - jump-threading - lower-expect - lower-constant-intrinsics - loop-sink",3865715
+314,mvt/mvt,kernel_mvt,"dse - loop(loop-idiom) - alignment-from-assumptions - memcpyopt - mldst-motion - slp-vectorizer - bdce - div-rem-pairs - sccp",4109315
+315,mvt/mvt,kernel_mvt,"mem2reg - mldst-motion - lower-constant-intrinsics - pgo-memop-opt - pgo-memop-opt",4109315
+316,mvt/mvt,print_array,"loop-load-elim - loop-sink - lower-constant-intrinsics - callsite-splitting - speculative-execution",3864075
+317,mvt/mvt,print_array,"loop(loop-deletion) - slp-vectorizer - loop-distribute - lcssa - mem2reg,loop-unroll<O3>",3864075
+318,mvt/mvt,print_array,"correlated-propagation - lower-constant-intrinsics - sroa",3864075
+319,mvt/mvt,print_array,"loop-load-elim - div-rem-pairs - sccp - libcalls-shrinkwrap - loop-distribute - float2int - adce - sroa - gvn - loop-distribute",3864075
+320,mvt/mvt,print_array,"lcssa - sroa - aggressive-instcombine - loop-vectorize - loop-sink - lower-expect - instcombine - alignment-from-assumptions",3861615
+321,mvt/mvt,print_array,"float2int - loop-vectorize - loop-load-elim - dse - lower-expect - instsimplify - loop-simplify",3864075
+322,mvt/mvt,print_array,"loop(loop-deletion) - lower-constant-intrinsics - lower-constant-intrinsics - loop-simplify - div-rem-pairs - mem2reg - sccp - loop(loop-idiom) - speculative-execution - slp-vectorizer",3864075
+323,mvt/mvt,print_array,"lower-constant-intrinsics - aggressive-instcombine - jump-threading - loop(indvars) - loop-sink - div-rem-pairs - loop(loop-deletion) - speculative-execution - mem2reg",3861615
+324,mvt/mvt,print_array,"bdce - gvn - loop-simplify - instcombine - callsite-splitting - correlated-propagation - dse - loop(loop-idiom) - loop(loop-idiom) - aggressive-instcombine",3858335
+325,mvt/mvt,print_array,"bdce - memcpyopt - sroa - sroa - loop-distribute - reassociate - mldst-motion - lcssa",3864075
+326,mvt/mvt,main,"sccp - speculative-execution - mldst-motion - loop(loop-deletion) - callsite-splitting - jump-threading - adce - lower-expect - mem2reg",3858495
+327,mvt/mvt,main,"bdce - loop-distribute - mem2reg,loop-unroll<O3> - loop-simplify - correlated-propagation - mem2reg,loop-unroll<O3> - instcombine - callsite-splitting - libcalls-shrinkwrap - memcpyopt",3858335
+328,mvt/mvt,main,"gvn",3858335
+329,mvt/mvt,main,"speculative-execution - correlated-propagation",3858495
+330,mvt/mvt,main,"pgo-memop-opt - speculative-execution - loop-mssa(licm) - loop-load-elim - loop-mssa(licm) - adce - loop-distribute - instsimplify - memcpyopt",3858335
+331,mvt/mvt,main,"loop(indvars) - bdce",3858335
+332,mvt/mvt,main,"adce - aggressive-instcombine - adce - sroa - mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3> - slp-vectorizer - sroa - instsimplify",3858335
+333,mvt/mvt,main,"memcpyopt - pgo-memop-opt - float2int - loop-sink - float2int - mem2reg,loop-unroll<O3>",3858335
+334,mvt/mvt,main,"speculative-execution - lower-constant-intrinsics - mem2reg,loop-unroll<O3> - loop-distribute - bdce - loop-simplify - float2int - aggressive-instcombine",3858495
+335,mvt/mvt,main,"dse - alignment-from-assumptions - div-rem-pairs - correlated-propagation",3858335
+336,trmm/trmm,init_array,"loop(loop-idiom) - memcpyopt - loop(loop-deletion) - lower-constant-intrinsics - mldst-motion - loop(indvars) - loop(loop-idiom) - mldst-motion - reassociate - correlated-propagation",19531391
+337,trmm/trmm,init_array,"mldst-motion - lower-constant-intrinsics - mem2reg - correlated-propagation - mem2reg,loop-unroll<O3> - adce",19531391
+338,trmm/trmm,init_array,"reassociate - bdce - bdce - memcpyopt",19531391
+339,trmm/trmm,init_array,"mem2reg - dse - instcombine - loop-load-elim - instcombine - lcssa - loop-distribute - loop(loop-deletion)",19531391
+340,trmm/trmm,init_array,"correlated-propagation - loop-simplify - lower-expect - sccp - mem2reg,loop-unroll<O3>",19531391
+341,trmm/trmm,init_array,"aggressive-instcombine - reassociate - lower-expect - sccp - lcssa - dse - mldst-motion - mem2reg,loop-unroll<O3>",19531391
+342,trmm/trmm,init_array,"reassociate - gvn - callsite-splitting - lower-expect",19531391
+343,trmm/trmm,init_array,"pgo-memop-opt - adce - alignment-from-assumptions",19531391
+344,trmm/trmm,init_array,"mem2reg,loop-unroll<O3> - instsimplify - loop-simplify - jump-threading - loop(indvars) - float2int - loop(loop-idiom) - slp-vectorizer - instsimplify",19531391
+345,trmm/trmm,init_array,"callsite-splitting - mem2reg,loop-unroll<O3> - callsite-splitting - bdce - loop-distribute - mldst-motion - mem2reg,loop-unroll<O3> - mldst-motion",19531391
+346,trmm/trmm,init_array,"baseline",19518981
+347,trmm/trmm,kernel_trmm,"correlated-propagation - adce - slp-vectorizer - loop-vectorize - loop(indvars)",20155741
+348,trmm/trmm,kernel_trmm,"mldst-motion - lcssa - loop-load-elim - lcssa - aggressive-instcombine",20155741
+349,trmm/trmm,kernel_trmm,"lower-expect",20155741
+350,trmm/trmm,kernel_trmm,"alignment-from-assumptions - loop(indvars) - pgo-memop-opt - float2int - loop-mssa(licm) - reassociate - adce - pgo-memop-opt",18013112
+351,trmm/trmm,kernel_trmm,"loop(loop-deletion)",20155741
+352,trmm/trmm,kernel_trmm,"alignment-from-assumptions - mldst-motion - loop-load-elim - loop(loop-deletion) - libcalls-shrinkwrap",20155741
+353,trmm/trmm,kernel_trmm,"callsite-splitting - bdce - speculative-execution - pgo-memop-opt - loop(loop-deletion) - loop-vectorize",20155741
+354,trmm/trmm,kernel_trmm,"div-rem-pairs - loop-simplify - mem2reg,loop-unroll<O3> - instsimplify - mldst-motion",20155741
+355,trmm/trmm,kernel_trmm,"sccp - sroa - loop-distribute - loop-sink - sccp - loop-distribute - alignment-from-assumptions",20155741
+356,trmm/trmm,kernel_trmm,"instcombine - sroa - aggressive-instcombine - sroa - loop(indvars) - reassociate - gvn - aggressive-instcombine - mem2reg",20351671
+357,trmm/trmm,print_array,"instsimplify - correlated-propagation - pgo-memop-opt - alignment-from-assumptions - loop-simplify - loop-distribute - mem2reg - mem2reg - sroa - adce",17999482
+358,trmm/trmm,print_array,"loop-load-elim - slp-vectorizer - mldst-motion - instsimplify - instsimplify - lcssa",17999482
+359,trmm/trmm,print_array,"loop-vectorize - speculative-execution - instsimplify - alignment-from-assumptions - correlated-propagation - instsimplify - gvn - lcssa - loop-load-elim",17999482
+360,trmm/trmm,print_array,"loop-mssa(licm) - loop-load-elim - loop-mssa(licm)",17950532
+361,trmm/trmm,print_array,"instsimplify - loop(loop-idiom) - adce - mldst-motion",17999482
+362,trmm/trmm,print_array,"sccp",17999482
+363,trmm/trmm,print_array,"instcombine - bdce - div-rem-pairs - loop-simplify - loop(loop-deletion) - alignment-from-assumptions",17999482
+364,trmm/trmm,print_array,"loop-mssa(licm) - float2int - gvn - lcssa - correlated-propagation - sroa - loop(loop-idiom) - instsimplify - reassociate - dse",17950532
+365,trmm/trmm,print_array,"mem2reg - loop-simplify",17999482
+366,trmm/trmm,print_array,"aggressive-instcombine - callsite-splitting - loop-load-elim - callsite-splitting - lower-constant-intrinsics - bdce - adce - gvn - loop-load-elim - loop(loop-deletion)",17999482
+367,trmm/trmm,main,"lower-constant-intrinsics - memcpyopt - loop(indvars) - reassociate - adce - mem2reg",17950532
+368,trmm/trmm,main,"libcalls-shrinkwrap - float2int - sccp - div-rem-pairs - libcalls-shrinkwrap - jump-threading - pgo-memop-opt - float2int - instsimplify - adce",17950532
+369,trmm/trmm,main,"instsimplify - mem2reg,loop-unroll<O3> - adce - speculative-execution - mem2reg - mem2reg - alignment-from-assumptions",17950532
+370,trmm/trmm,main,"slp-vectorizer - loop-mssa(licm) - callsite-splitting - adce - slp-vectorizer - loop-vectorize - lower-expect - loop(loop-idiom)",17950532
+371,trmm/trmm,main,"callsite-splitting - alignment-from-assumptions - memcpyopt - lower-constant-intrinsics - callsite-splitting - loop-distribute - mem2reg - bdce",17950532
+372,trmm/trmm,main,"dse - loop(loop-idiom) - aggressive-instcombine - reassociate - float2int",17950532
+373,trmm/trmm,main,"alignment-from-assumptions - lcssa - loop-mssa(licm)",17950532
+374,trmm/trmm,main,"loop-distribute - loop-vectorize",17950532
+375,trmm/trmm,main,"loop(indvars) - loop(loop-deletion) - lower-expect - mldst-motion - loop-simplify - jump-threading - lower-expect",17950532
+376,trmm/trmm,main,"loop-load-elim - loop-distribute - mldst-motion - speculative-execution - dse - mldst-motion - instcombine - correlated-propagation - instcombine - loop-mssa(licm)",17950532
+377,floyd-warshall/floyd-warshall,init_array,"mem2reg,loop-unroll<O3> - loop(loop-deletion) - div-rem-pairs - lower-constant-intrinsics - sccp - loop-sink - aggressive-instcombine",194234243
+378,floyd-warshall/floyd-warshall,init_array,"instsimplify - callsite-splitting",194234243
+379,floyd-warshall/floyd-warshall,init_array,"memcpyopt - correlated-propagation - callsite-splitting - div-rem-pairs",194234243
+380,floyd-warshall/floyd-warshall,init_array,"memcpyopt",194234243
+381,floyd-warshall/floyd-warshall,init_array,"gvn - reassociate - gvn - pgo-memop-opt",193564463
+382,floyd-warshall/floyd-warshall,init_array,"sroa - loop-mssa(licm) - jump-threading - libcalls-shrinkwrap",193943863
+383,floyd-warshall/floyd-warshall,init_array,"adce - jump-threading - speculative-execution",194234243
+384,floyd-warshall/floyd-warshall,init_array,"mem2reg,loop-unroll<O3> - reassociate - lower-constant-intrinsics - correlated-propagation - aggressive-instcombine - loop-vectorize - mem2reg,loop-unroll<O3>",194234243
+385,floyd-warshall/floyd-warshall,init_array,"alignment-from-assumptions - aggressive-instcombine - reassociate - div-rem-pairs - loop(loop-idiom)",194234243
+386,floyd-warshall/floyd-warshall,init_array,"libcalls-shrinkwrap - aggressive-instcombine - reassociate - loop-simplify",194234243
+387,floyd-warshall/floyd-warshall,init_array,"baseline",194310473
+388,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"loop-simplify - loop-vectorize - lower-constant-intrinsics - gvn - mem2reg - alignment-from-assumptions",136706993
+389,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"sccp - loop-load-elim - correlated-propagation - jump-threading - div-rem-pairs - libcalls-shrinkwrap - memcpyopt",186642813
+390,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"slp-vectorizer - loop-mssa(licm) - gvn - loop-mssa(licm) - bdce",121383773
+391,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"mldst-motion - instcombine - loop-vectorize - dse - instcombine - callsite-splitting - memcpyopt - loop-mssa(licm)",178157713
+392,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"mldst-motion - loop-simplify - lower-expect",186642813
+393,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"jump-threading - loop(loop-deletion) - instcombine - loop-mssa(licm)",178157713
+394,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"pgo-memop-opt - lower-constant-intrinsics - instsimplify - speculative-execution - slp-vectorizer - aggressive-instcombine - memcpyopt - reassociate - pgo-memop-opt",186642813
+395,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"memcpyopt - instsimplify - loop-simplify - slp-vectorizer - loop-distribute - mem2reg - mem2reg,loop-unroll<O3> - pgo-memop-opt - adce - correlated-propagation",186642813
+396,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"loop(loop-idiom) - gvn",136706993
+397,floyd-warshall/floyd-warshall,kernel_floyd_warshall,"loop-sink",186642813
+398,floyd-warshall/floyd-warshall,print_array,"reassociate - loop-mssa(licm)",121018993
+399,floyd-warshall/floyd-warshall,print_array,"div-rem-pairs - jump-threading - correlated-propagation - pgo-memop-opt - correlated-propagation - libcalls-shrinkwrap - mem2reg - pgo-memop-opt",121307543
+400,floyd-warshall/floyd-warshall,print_array,"sroa - reassociate",121307543
+401,floyd-warshall/floyd-warshall,print_array,"speculative-execution - jump-threading - adce - dse - speculative-execution - adce - jump-threading - pgo-memop-opt",121307543
+402,floyd-warshall/floyd-warshall,print_array,"memcpyopt - libcalls-shrinkwrap - alignment-from-assumptions - adce - loop-distribute - loop-distribute - loop-load-elim",121307543
+403,floyd-warshall/floyd-warshall,print_array,"reassociate - mldst-motion",121307543
+404,floyd-warshall/floyd-warshall,print_array,"instsimplify - loop-sink - memcpyopt - lcssa - libcalls-shrinkwrap - pgo-memop-opt - gvn - callsite-splitting - speculative-execution",121307543
+405,floyd-warshall/floyd-warshall,print_array,"pgo-memop-opt",121307543
+406,floyd-warshall/floyd-warshall,print_array,"correlated-propagation - memcpyopt - gvn - lower-expect - mldst-motion - sroa - loop(indvars)",121307543
+407,floyd-warshall/floyd-warshall,print_array,"mem2reg - sccp - slp-vectorizer - instcombine - float2int - aggressive-instcombine - reassociate - adce",121307543
+408,floyd-warshall/floyd-warshall,main,"loop-sink - div-rem-pairs - instcombine - loop-simplify - correlated-propagation - adce - mldst-motion - jump-threading - lower-expect - reassociate",121018993
+409,floyd-warshall/floyd-warshall,main,"alignment-from-assumptions - adce - loop-simplify - instsimplify - loop-mssa(licm)",121018993
+410,floyd-warshall/floyd-warshall,main,"reassociate - instcombine",121018993
+411,floyd-warshall/floyd-warshall,main,"lower-expect - pgo-memop-opt - alignment-from-assumptions - instsimplify - lcssa - instsimplify - loop(loop-idiom) - gvn - loop-simplify",121018993
+412,floyd-warshall/floyd-warshall,main,"loop-mssa(licm) - instsimplify - loop-distribute",121018993
+413,floyd-warshall/floyd-warshall,main,"instsimplify - loop-vectorize - mldst-motion - lcssa - jump-threading - mem2reg,loop-unroll<O3>",121018993
+414,floyd-warshall/floyd-warshall,main,"loop-vectorize - bdce - instsimplify - correlated-propagation - mem2reg",121018993
+415,floyd-warshall/floyd-warshall,main,"float2int - dse - instcombine - mem2reg,loop-unroll<O3> - sroa - gvn - sroa - loop-distribute",121018993
+416,floyd-warshall/floyd-warshall,main,"lcssa - loop(loop-deletion) - float2int",121018993
+417,floyd-warshall/floyd-warshall,main,"loop-sink - instcombine - pgo-memop-opt - memcpyopt - dse",121018993
+418,syr2k/syr2k,init_array,"lower-expect - sroa - lcssa - mem2reg - instsimplify",41440576
+419,syr2k/syr2k,init_array,"instsimplify - sroa - mem2reg,loop-unroll<O3> - slp-vectorizer - libcalls-shrinkwrap - jump-threading - reassociate",41440576
+420,syr2k/syr2k,init_array,"jump-threading - pgo-memop-opt - alignment-from-assumptions - callsite-splitting - loop(loop-idiom) - loop-vectorize",41440576
+421,syr2k/syr2k,init_array,"adce - dse - adce - sroa - speculative-execution - gvn",41440576
+422,syr2k/syr2k,init_array,"dse - loop(loop-idiom)",41440576
+423,syr2k/syr2k,init_array,"sccp - lower-constant-intrinsics - jump-threading",41440576
+424,syr2k/syr2k,init_array,"div-rem-pairs - sccp - aggressive-instcombine - jump-threading - instsimplify - loop-load-elim - jump-threading - lower-constant-intrinsics - lcssa",41440576
+425,syr2k/syr2k,init_array,"pgo-memop-opt - loop-load-elim - correlated-propagation - aggressive-instcombine - adce",41440576
+426,syr2k/syr2k,init_array,"sroa - loop(indvars)",41440576
+427,syr2k/syr2k,init_array,"memcpyopt - correlated-propagation - correlated-propagation - loop(loop-deletion) - lower-expect - lower-expect - loop-simplify - lower-expect - loop(loop-idiom)",41440576
+428,syr2k/syr2k,init_array,"baseline",41412326
+429,syr2k/syr2k,kernel_syr2k,"loop-simplify - jump-threading - instsimplify - instcombine - loop(loop-deletion) - callsite-splitting - lower-expect - reassociate",42083536
+430,syr2k/syr2k,kernel_syr2k,"gvn",42083536
+431,syr2k/syr2k,kernel_syr2k,"pgo-memop-opt - reassociate - speculative-execution - loop-distribute - loop(loop-deletion) - loop(loop-idiom)",42083536
+432,syr2k/syr2k,kernel_syr2k,"bdce - jump-threading - loop-load-elim - gvn - memcpyopt - loop-load-elim",42083536
+433,syr2k/syr2k,kernel_syr2k,"callsite-splitting - pgo-memop-opt",42083536
+434,syr2k/syr2k,kernel_syr2k,"loop-load-elim - loop(loop-idiom) - lcssa - lower-expect - slp-vectorizer - float2int - correlated-propagation - lower-expect - instsimplify - mem2reg",42083536
+435,syr2k/syr2k,kernel_syr2k,"alignment-from-assumptions - adce - gvn",42083536
+436,syr2k/syr2k,kernel_syr2k,"pgo-memop-opt - memcpyopt - adce - loop(indvars) - loop(loop-deletion) - memcpyopt - pgo-memop-opt - lower-constant-intrinsics - slp-vectorizer - callsite-splitting",42086696
+437,syr2k/syr2k,kernel_syr2k,"instcombine - div-rem-pairs - alignment-from-assumptions - libcalls-shrinkwrap - aggressive-instcombine - div-rem-pairs - lcssa - loop(indvars) - loop(loop-idiom)",42086696
+438,syr2k/syr2k,kernel_syr2k,"adce - sroa",42083536
+439,syr2k/syr2k,print_array,"slp-vectorizer - slp-vectorizer - correlated-propagation - mem2reg,loop-unroll<O3> - callsite-splitting",42063406
+440,syr2k/syr2k,print_array,"lower-expect - loop-load-elim - loop(indvars) - memcpyopt - slp-vectorizer - mem2reg,loop-unroll<O3>",42063406
+441,syr2k/syr2k,print_array,"loop-mssa(licm)",41991156
+442,syr2k/syr2k,print_array,"callsite-splitting - adce - pgo-memop-opt - mem2reg - float2int - bdce - instcombine - callsite-splitting",42063406
+443,syr2k/syr2k,print_array,"loop-mssa(licm) - pgo-memop-opt - aggressive-instcombine - bdce - sccp - dse - mldst-motion - loop(indvars)",41991156
+444,syr2k/syr2k,print_array,"loop-distribute - instcombine - loop-mssa(licm) - correlated-propagation - loop(loop-deletion) - div-rem-pairs - mem2reg,loop-unroll<O3> - instsimplify - bdce",42037036
+445,syr2k/syr2k,print_array,"loop-vectorize - sroa - loop(loop-deletion) - lower-expect - gvn - loop-load-elim - loop-distribute - instcombine - dse",42063406
+446,syr2k/syr2k,print_array,"loop(loop-deletion) - loop(indvars) - loop-mssa(licm) - instsimplify - loop-distribute - slp-vectorizer - loop-mssa(licm) - lower-constant-intrinsics",41991156
+447,syr2k/syr2k,print_array,"loop(loop-idiom) - bdce - callsite-splitting - lower-constant-intrinsics - instsimplify - sccp - libcalls-shrinkwrap - slp-vectorizer - lower-constant-intrinsics",42063406
+448,syr2k/syr2k,print_array,"loop(loop-deletion) - adce - sccp - adce - memcpyopt - loop-mssa(licm) - alignment-from-assumptions - loop(loop-deletion) - speculative-execution",41991156
+449,syr2k/syr2k,main,"callsite-splitting - mldst-motion - alignment-from-assumptions - loop(indvars) - loop(loop-deletion) - instsimplify - reassociate",41991156
+450,syr2k/syr2k,main,"aggressive-instcombine - aggressive-instcombine - lower-expect - reassociate - bdce - loop(indvars) - bdce - lower-constant-intrinsics - loop-mssa(licm) - libcalls-shrinkwrap",41991156
+451,syr2k/syr2k,main,"reassociate - mem2reg,loop-unroll<O3> - float2int - sroa - loop(loop-deletion)",41991156
+452,syr2k/syr2k,main,"mem2reg - mem2reg - float2int - mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3>",41991156
+453,syr2k/syr2k,main,"alignment-from-assumptions - mem2reg,loop-unroll<O3> - loop(loop-deletion)",41991156
+454,syr2k/syr2k,main,"callsite-splitting - sroa - loop(loop-deletion)",41991156
+455,syr2k/syr2k,main,"alignment-from-assumptions",41991156
+456,syr2k/syr2k,main,"loop-simplify - loop-load-elim - pgo-memop-opt",41991156
+457,syr2k/syr2k,main,"loop-vectorize - sroa - lower-constant-intrinsics",41991156
+458,syr2k/syr2k,main,"loop-sink",41991156
+459,symm/symm,init_array,"pgo-memop-opt - sroa - aggressive-instcombine - callsite-splitting - mem2reg - mem2reg,loop-unroll<O3> - sccp",27435701
+460,symm/symm,init_array,"aggressive-instcombine",27435701
+461,symm/symm,init_array,"loop-mssa(licm) - lower-constant-intrinsics - mem2reg - libcalls-shrinkwrap - loop(loop-idiom) - lower-constant-intrinsics - adce - callsite-splitting",27163353
+462,symm/symm,init_array,"loop-load-elim - bdce - float2int - bdce - callsite-splitting - div-rem-pairs - slp-vectorizer - loop-distribute - loop(loop-deletion)",27435701
+463,symm/symm,init_array,"sccp - float2int - lower-expect",27435701
+464,symm/symm,init_array,"lower-constant-intrinsics - loop(indvars) - loop(loop-deletion) - aggressive-instcombine - reassociate - reassociate - loop(indvars) - loop-vectorize - loop(loop-idiom)",27307661
+465,symm/symm,init_array,"gvn - jump-threading",27453341
+466,symm/symm,init_array,"instcombine - loop-mssa(licm) - loop-mssa(licm) - loop-load-elim - correlated-propagation - pgo-memop-opt - memcpyopt - gvn",27262085
+467,symm/symm,init_array,"instcombine - float2int - lower-expect - lower-constant-intrinsics - mem2reg - slp-vectorizer - loop-mssa(licm) - slp-vectorizer - mldst-motion - float2int",27261653
+468,symm/symm,init_array,"instcombine - lower-expect",27431081
+469,symm/symm,init_array,"baseline",27425581
+470,symm/symm,kernel_symm,"loop-simplify - lower-constant-intrinsics - div-rem-pairs - lower-constant-intrinsics - sccp - sroa",25810343
+471,symm/symm,kernel_symm,"loop(loop-deletion) - correlated-propagation - loop-vectorize - slp-vectorizer - instcombine",25810343
+472,symm/symm,kernel_symm,"mldst-motion - loop-sink - memcpyopt - adce - loop-simplify",25810343
+473,symm/symm,kernel_symm,"alignment-from-assumptions",25810343
+474,symm/symm,kernel_symm,"loop-vectorize - sroa - mem2reg,loop-unroll<O3> - loop-distribute - memcpyopt - lower-constant-intrinsics - lower-expect - speculative-execution",26435303
+475,symm/symm,kernel_symm,"bdce - loop(indvars) - dse - loop-sink - jump-threading - loop-vectorize - reassociate",26435303
+476,symm/symm,kernel_symm,"float2int - loop(indvars)",26435303
+477,symm/symm,kernel_symm,"loop-sink - pgo-memop-opt - gvn - instsimplify - correlated-propagation - memcpyopt - loop-vectorize - float2int - gvn",25810343
+478,symm/symm,kernel_symm,"loop-sink - loop(indvars) - pgo-memop-opt - mldst-motion - jump-threading - libcalls-shrinkwrap",26435303
+479,symm/symm,kernel_symm,"loop(indvars) - instcombine - mem2reg,loop-unroll<O3>",26435303
+480,symm/symm,print_array,"instsimplify - mldst-motion - jump-threading - speculative-execution - loop-simplify - loop-simplify - loop-sink - lower-constant-intrinsics - reassociate",25796713
+481,symm/symm,print_array,"float2int - lcssa - mldst-motion - sccp",25796713
+482,symm/symm,print_array,"sroa - sroa - mldst-motion - sccp - loop-sink - bdce - speculative-execution",25796713
+483,symm/symm,print_array,"loop-simplify - mem2reg",25796713
+484,symm/symm,print_array,"adce - float2int - instsimplify - loop-sink - div-rem-pairs - dse - libcalls-shrinkwrap - reassociate - loop-vectorize - adce",25796713
+485,symm/symm,print_array,"loop-distribute - loop-simplify - lower-constant-intrinsics - instsimplify - loop-distribute",25796713
+486,symm/symm,print_array,"loop(indvars) - correlated-propagation - callsite-splitting - pgo-memop-opt - loop-mssa(licm) - lcssa - loop-vectorize",25747763
+487,symm/symm,print_array,"lcssa - pgo-memop-opt - instcombine - div-rem-pairs - sccp",25796713
+488,symm/symm,print_array,"mldst-motion - callsite-splitting - lcssa - loop(loop-idiom)",25796713
+489,symm/symm,print_array,"sroa - callsite-splitting",25796713
+490,symm/symm,main,"dse - alignment-from-assumptions - loop-distribute - mem2reg - instsimplify - instcombine - lcssa - aggressive-instcombine",25747763
+491,symm/symm,main,"sccp - aggressive-instcombine - memcpyopt - instsimplify - gvn - gvn - jump-threading",25747763
+492,symm/symm,main,"lcssa - mem2reg,loop-unroll<O3>",25747763
+493,symm/symm,main,"correlated-propagation - loop(loop-idiom) - libcalls-shrinkwrap - lower-constant-intrinsics",25747763
+494,symm/symm,main,"lower-expect - slp-vectorizer - mem2reg,loop-unroll<O3> - sroa - dse - slp-vectorizer - gvn - mem2reg,loop-unroll<O3>",25747763
+495,symm/symm,main,"adce - slp-vectorizer - sroa - mldst-motion - memcpyopt - loop(loop-idiom) - lcssa",25747763
+496,symm/symm,main,"lcssa - float2int - loop-simplify - instcombine - speculative-execution",25747763
+497,symm/symm,main,"instsimplify",25747763
+498,symm/symm,main,"loop(loop-deletion) - mldst-motion - instcombine - mem2reg - loop-sink - reassociate",25747763
+499,symm/symm,main,"mldst-motion - float2int - dse - adce - loop-sink",25747763
+500,doitgen/doitgen,kernel_doitgen,"correlated-propagation - memcpyopt - loop-load-elim - loop(loop-idiom) - sroa - jump-threading - reassociate - adce - dse - gvn",19032564
+501,doitgen/doitgen,kernel_doitgen,"loop(indvars) - instcombine - mem2reg,loop-unroll<O3> - lcssa - jump-threading - reassociate",11006436
+502,doitgen/doitgen,kernel_doitgen,"lcssa - loop(indvars) - reassociate - pgo-memop-opt",19295112
+503,doitgen/doitgen,kernel_doitgen,"mldst-motion - correlated-propagation - instcombine - aggressive-instcombine",19295112
+504,doitgen/doitgen,kernel_doitgen,"pgo-memop-opt - correlated-propagation - loop(loop-idiom) - adce - correlated-propagation",19295112
+505,doitgen/doitgen,kernel_doitgen,"mem2reg,loop-unroll<O3> - div-rem-pairs - loop-load-elim",11006436
+506,doitgen/doitgen,kernel_doitgen,"loop-mssa(licm) - div-rem-pairs",16802184
+507,doitgen/doitgen,kernel_doitgen,"jump-threading - lower-expect - loop-simplify - gvn - alignment-from-assumptions",19032564
+508,doitgen/doitgen,kernel_doitgen,"gvn - slp-vectorizer",19032564
+509,doitgen/doitgen,kernel_doitgen,"speculative-execution - mem2reg - correlated-propagation - loop(loop-idiom) - float2int - reassociate",19295112
+510,doitgen/doitgen,kernel_doitgen,"baseline",18836832
+511,doitgen/doitgen,init_array,"jump-threading - loop(indvars)",11017896
+512,doitgen/doitgen,init_array,"reassociate - loop-sink - mem2reg,loop-unroll<O3> - gvn - gvn - loop-simplify - sccp",10328804
+513,doitgen/doitgen,init_array,"instsimplify - lower-expect - mem2reg,loop-unroll<O3> - mem2reg - loop-simplify - mem2reg - callsite-splitting - loop-vectorize - lower-expect",10328804
+514,doitgen/doitgen,init_array,"gvn - loop(indvars) - float2int - callsite-splitting - alignment-from-assumptions - alignment-from-assumptions - float2int",11017896
+515,doitgen/doitgen,init_array,"slp-vectorizer - slp-vectorizer - lower-constant-intrinsics - jump-threading - libcalls-shrinkwrap - callsite-splitting - pgo-memop-opt - mem2reg,loop-unroll<O3> - dse - dse",10328804
+516,doitgen/doitgen,init_array,"mem2reg",11017896
+517,doitgen/doitgen,init_array,"instcombine - pgo-memop-opt - adce - lcssa - libcalls-shrinkwrap - callsite-splitting - sroa - lower-constant-intrinsics",11017896
+518,doitgen/doitgen,init_array,"lower-constant-intrinsics - aggressive-instcombine - speculative-execution - sccp - speculative-execution - loop(loop-idiom) - correlated-propagation - dse - dse",11017896
+519,doitgen/doitgen,init_array,"mem2reg,loop-unroll<O3>",10328804
+520,doitgen/doitgen,init_array,"slp-vectorizer - pgo-memop-opt - libcalls-shrinkwrap",11017896
+521,doitgen/doitgen,print_array,"float2int - mem2reg,loop-unroll<O3> - pgo-memop-opt - pgo-memop-opt - memcpyopt - pgo-memop-opt - loop-mssa(licm) - loop-sink",10062164
+522,doitgen/doitgen,print_array,"loop-vectorize - lcssa - callsite-splitting - mem2reg - aggressive-instcombine - loop-load-elim",10300004
+523,doitgen/doitgen,print_array,"mem2reg - alignment-from-assumptions - sccp - loop-mssa(licm)",10062164
+524,doitgen/doitgen,print_array,"dse - slp-vectorizer - gvn - libcalls-shrinkwrap - jump-threading - alignment-from-assumptions",10300004
+525,doitgen/doitgen,print_array,"gvn - dse - sccp - instsimplify - correlated-propagation - sccp - loop-simplify - lower-expect - sccp",10300004
+526,doitgen/doitgen,print_array,"slp-vectorizer - jump-threading - alignment-from-assumptions - div-rem-pairs",10300004
+527,doitgen/doitgen,print_array,"libcalls-shrinkwrap - callsite-splitting - adce - gvn - gvn - loop-sink - slp-vectorizer",10300004
+528,doitgen/doitgen,print_array,"mem2reg - float2int - mem2reg,loop-unroll<O3> - dse",10300004
+529,doitgen/doitgen,print_array,"lower-constant-intrinsics - instsimplify - gvn - adce - loop(loop-idiom) - speculative-execution",10300004
+530,doitgen/doitgen,print_array,"alignment-from-assumptions - callsite-splitting - loop(loop-deletion) - mem2reg,loop-unroll<O3> - alignment-from-assumptions - callsite-splitting",10300004
+531,doitgen/doitgen,main,"speculative-execution - sccp - sroa - loop-sink - loop(loop-deletion)",10062244
+532,doitgen/doitgen,main,"dse",10062164
+533,doitgen/doitgen,main,"loop-load-elim - bdce - slp-vectorizer - aggressive-instcombine - loop-load-elim - loop-distribute - loop-simplify - loop-mssa(licm) - libcalls-shrinkwrap",10062164
+534,doitgen/doitgen,main,"loop-simplify - callsite-splitting - loop-vectorize - mem2reg,loop-unroll<O3> - adce - loop-sink - gvn",10062164
+535,doitgen/doitgen,main,"aggressive-instcombine - loop-simplify - loop-distribute - reassociate - lcssa - bdce - speculative-execution",10062244
+536,doitgen/doitgen,main,"lower-constant-intrinsics - loop(indvars) - loop-simplify - loop-mssa(licm) - loop(loop-idiom)",10062164
+537,doitgen/doitgen,main,"pgo-memop-opt - reassociate - div-rem-pairs - bdce - dse - pgo-memop-opt - reassociate - speculative-execution - instsimplify",10062164
+538,doitgen/doitgen,main,"loop-load-elim - mldst-motion - lower-expect - lower-expect - aggressive-instcombine - lcssa - mem2reg - pgo-memop-opt - loop-distribute",10062164
+539,doitgen/doitgen,main,"adce - bdce",10062164
+540,doitgen/doitgen,main,"callsite-splitting - sccp - float2int",10062164
+541,gemm/gemm,init_array,"libcalls-shrinkwrap - pgo-memop-opt - loop-simplify - dse - lower-constant-intrinsics - loop(indvars) - loop-vectorize - loop-sink - mem2reg,loop-unroll<O3>",20122289
+542,gemm/gemm,init_array,"sroa - speculative-execution - gvn - float2int - callsite-splitting - instsimplify - sroa",20122289
+543,gemm/gemm,init_array,"loop-mssa(licm) - loop-mssa(licm) - loop-load-elim - jump-threading - sccp - mem2reg",19776114
+544,gemm/gemm,init_array,"div-rem-pairs - libcalls-shrinkwrap - adce",20122289
+545,gemm/gemm,init_array,"mem2reg,loop-unroll<O3> - speculative-execution - pgo-memop-opt - sroa - pgo-memop-opt - loop-sink - float2int - lower-constant-intrinsics - sroa",20122289
+546,gemm/gemm,init_array,"pgo-memop-opt - loop-vectorize - loop(loop-deletion)",20122289
+547,gemm/gemm,init_array,"aggressive-instcombine - libcalls-shrinkwrap - gvn - lower-expect - alignment-from-assumptions - float2int - loop-distribute - sccp - instcombine",20122289
+548,gemm/gemm,init_array,"slp-vectorizer - bdce - slp-vectorizer - sroa",20122289
+549,gemm/gemm,init_array,"reassociate - alignment-from-assumptions",20122289
+550,gemm/gemm,init_array,"loop-vectorize - lcssa - mldst-motion - loop-sink - mem2reg,loop-unroll<O3>",20122289
+551,gemm/gemm,init_array,"baseline",20083599
+552,gemm/gemm,kernel_gemm,"loop(loop-idiom) - loop-distribute - libcalls-shrinkwrap - instsimplify - alignment-from-assumptions - pgo-memop-opt - lcssa - lower-expect - correlated-propagation - loop-distribute",20296514
+553,gemm/gemm,kernel_gemm,"lcssa - alignment-from-assumptions - callsite-splitting",20296514
+554,gemm/gemm,kernel_gemm,"float2int - correlated-propagation - sccp - lower-expect",20296514
+555,gemm/gemm,kernel_gemm,"lower-expect",20296514
+556,gemm/gemm,kernel_gemm,"lower-constant-intrinsics - loop(indvars) - loop(indvars) - loop(loop-deletion) - mem2reg,loop-unroll<O3> - jump-threading - speculative-execution",20101446
+557,gemm/gemm,kernel_gemm,"loop-vectorize",20296514
+558,gemm/gemm,kernel_gemm,"loop-distribute - loop(loop-deletion)",20296514
+559,gemm/gemm,kernel_gemm,"gvn - mem2reg,loop-unroll<O3> - loop-vectorize - lower-expect - instsimplify",20101446
+560,gemm/gemm,kernel_gemm,"pgo-memop-opt - pgo-memop-opt - loop-vectorize - mldst-motion - libcalls-shrinkwrap - gvn - memcpyopt - memcpyopt - aggressive-instcombine - loop(loop-deletion)",20296514
+561,gemm/gemm,kernel_gemm,"slp-vectorizer - instsimplify",20296514
+562,gemm/gemm,print_array,"loop-vectorize - mldst-motion - speculative-execution",20089916
+563,gemm/gemm,print_array,"aggressive-instcombine - alignment-from-assumptions",20089916
+564,gemm/gemm,print_array,"aggressive-instcombine - aggressive-instcombine",20089916
+565,gemm/gemm,print_array,"bdce - bdce - loop-distribute - loop-distribute - callsite-splitting - bdce - jump-threading - loop-vectorize",20089916
+566,gemm/gemm,print_array,"bdce - float2int",20089916
+567,gemm/gemm,print_array,"loop-simplify - speculative-execution - instsimplify",20089916
+568,gemm/gemm,print_array,"mldst-motion - loop-simplify - lcssa - correlated-propagation - lcssa - pgo-memop-opt",20089916
+569,gemm/gemm,print_array,"loop-simplify",20089916
+570,gemm/gemm,print_array,"correlated-propagation - gvn",20089916
+571,gemm/gemm,print_array,"reassociate - sccp - bdce - speculative-execution",20089916
+572,gemm/gemm,main,"aggressive-instcombine - loop(loop-deletion) - pgo-memop-opt - mldst-motion - dse - float2int - float2int",20089916
+573,gemm/gemm,main,"libcalls-shrinkwrap",20089916
+574,gemm/gemm,main,"dse - memcpyopt - correlated-propagation - aggressive-instcombine - mem2reg",20089916
+575,gemm/gemm,main,"speculative-execution - aggressive-instcombine - gvn - instsimplify",20089916
+576,gemm/gemm,main,"loop-mssa(licm) - mem2reg,loop-unroll<O3> - bdce",20089916
+577,gemm/gemm,main,"instsimplify - loop-mssa(licm) - instsimplify - jump-threading - lower-constant-intrinsics - memcpyopt - slp-vectorizer - float2int",20089916
+578,gemm/gemm,main,"pgo-memop-opt - dse - float2int - loop-distribute - instcombine - loop-sink - memcpyopt - slp-vectorizer - lower-expect",20089916
+579,gemm/gemm,main,"div-rem-pairs - aggressive-instcombine",20089916
+580,gemm/gemm,main,"alignment-from-assumptions - loop(loop-idiom) - loop-simplify - pgo-memop-opt - float2int - loop-distribute - loop-vectorize - instcombine",20089916
+581,gemm/gemm,main,"div-rem-pairs - loop-load-elim - memcpyopt",20089916
+582,nussinov/nussinov,init_array,"sroa",201966253
+583,nussinov/nussinov,init_array,"memcpyopt - dse - gvn",201966253
+584,nussinov/nussinov,init_array,"lcssa - loop-simplify - adce - loop-mssa(licm) - loop-mssa(licm) - loop(loop-idiom) - loop-mssa(licm) - loop-distribute - mem2reg,loop-unroll<O3>",201786283
+585,nussinov/nussinov,init_array,"loop-distribute - mldst-motion - loop-sink - speculative-execution - lcssa - lcssa - correlated-propagation - mldst-motion",201966253
+586,nussinov/nussinov,init_array,"mldst-motion - loop-vectorize - mem2reg,loop-unroll<O3> - gvn - libcalls-shrinkwrap - sroa - loop-simplify - speculative-execution - loop(loop-idiom)",201950403
+587,nussinov/nussinov,init_array,"jump-threading - reassociate - loop-sink - loop-distribute - reassociate - lower-constant-intrinsics - memcpyopt",201966253
+588,nussinov/nussinov,init_array,"instsimplify - mem2reg - instsimplify",201966253
+589,nussinov/nussinov,init_array,"instsimplify - loop-distribute - speculative-execution - memcpyopt - loop(indvars) - dse - gvn - sccp - div-rem-pairs - loop-simplify",201963813
+590,nussinov/nussinov,init_array,"loop(loop-deletion) - memcpyopt - libcalls-shrinkwrap - memcpyopt - adce - libcalls-shrinkwrap - sccp - instcombine",201963813
+591,nussinov/nussinov,init_array,"div-rem-pairs - loop-simplify - gvn - div-rem-pairs - loop(loop-deletion) - aggressive-instcombine - lcssa - mem2reg",201966253
+592,nussinov/nussinov,init_array,"baseline",202079713
+593,nussinov/nussinov,kernel_nussinov,"lower-expect - speculative-execution - loop-vectorize - bdce - loop-distribute - speculative-execution",199366413
+594,nussinov/nussinov,kernel_nussinov,"sroa - alignment-from-assumptions - instsimplify - loop-load-elim - sroa - memcpyopt - bdce",199366413
+595,nussinov/nussinov,kernel_nussinov,"sccp - bdce - loop(indvars) - loop(loop-deletion) - aggressive-instcombine - callsite-splitting - lcssa",198808263
+596,nussinov/nussinov,kernel_nussinov,"lower-constant-intrinsics - adce",199366413
+597,nussinov/nussinov,kernel_nussinov,"speculative-execution - loop-vectorize - loop-simplify - loop-vectorize - loop-load-elim",199366413
+598,nussinov/nussinov,kernel_nussinov,"loop(loop-idiom) - loop-vectorize - reassociate - memcpyopt - mldst-motion - instcombine",223329683
+599,nussinov/nussinov,kernel_nussinov,"lower-constant-intrinsics - mldst-motion - callsite-splitting - gvn - jump-threading - loop-vectorize - pgo-memop-opt",149878943
+600,nussinov/nussinov,kernel_nussinov,"loop(loop-idiom) - loop-sink - pgo-memop-opt - sroa - correlated-propagation",199366413
+601,nussinov/nussinov,kernel_nussinov,"aggressive-instcombine - speculative-execution - aggressive-instcombine - sccp - loop-mssa(licm) - instcombine - instcombine",198120183
+602,nussinov/nussinov,kernel_nussinov,"memcpyopt - div-rem-pairs - jump-threading - instsimplify",199366413
+603,nussinov/nussinov,print_array,"float2int - correlated-propagation",149687433
+604,nussinov/nussinov,print_array,"jump-threading - alignment-from-assumptions - lower-expect - adce - aggressive-instcombine - callsite-splitting",149687433
+605,nussinov/nussinov,print_array,"loop-load-elim - loop-simplify - bdce - slp-vectorizer - loop(indvars) - loop-load-elim - adce",149694233
+606,nussinov/nussinov,print_array,"instcombine - loop-simplify - loop-load-elim - instsimplify",149687433
+607,nussinov/nussinov,print_array,"dse - lcssa - reassociate - gvn - pgo-memop-opt - pgo-memop-opt - pgo-memop-opt",149687433
+608,nussinov/nussinov,print_array,"mem2reg - bdce",149687433
+609,nussinov/nussinov,print_array,"loop-simplify - memcpyopt - loop-mssa(licm) - reassociate - mem2reg",149584313
+610,nussinov/nussinov,print_array,"alignment-from-assumptions - loop-simplify - mem2reg,loop-unroll<O3> - float2int - correlated-propagation - loop(loop-deletion) - mem2reg,loop-unroll<O3> - lower-expect - mldst-motion",149762463
+611,nussinov/nussinov,print_array,"lower-expect - mem2reg - memcpyopt - instsimplify",149687433
+612,nussinov/nussinov,print_array,"div-rem-pairs",149687433
+613,nussinov/nussinov,main,"instcombine",149584313
+614,nussinov/nussinov,main,"loop-mssa(licm) - correlated-propagation - slp-vectorizer - memcpyopt - float2int",149584313
+615,nussinov/nussinov,main,"memcpyopt - bdce - loop-load-elim - sroa - mem2reg,loop-unroll<O3> - loop-distribute",149584313
+616,nussinov/nussinov,main,"lower-constant-intrinsics - sroa - aggressive-instcombine",149584313
+617,nussinov/nussinov,main,"loop-vectorize",149584313
+618,nussinov/nussinov,main,"speculative-execution - lower-constant-intrinsics - instcombine - correlated-propagation - slp-vectorizer - float2int",149584313
+619,nussinov/nussinov,main,"slp-vectorizer - speculative-execution - callsite-splitting - instsimplify",149584313
+620,nussinov/nussinov,main,"gvn - loop-simplify - gvn - loop-mssa(licm) - float2int",149584313
+621,nussinov/nussinov,main,"speculative-execution - sccp - loop(loop-idiom) - adce",149584393
+622,nussinov/nussinov,main,"instsimplify - libcalls-shrinkwrap - lower-constant-intrinsics - instcombine - loop-vectorize - loop(indvars) - callsite-splitting - memcpyopt - loop(loop-deletion)",149584313
+623,heat-3d/heat-3d,init_array,"gvn",96662520
+624,heat-3d/heat-3d,init_array,"mem2reg,loop-unroll<O3> - bdce - float2int - speculative-execution - loop(indvars) - instsimplify - div-rem-pairs - libcalls-shrinkwrap - mem2reg,loop-unroll<O3> - float2int",96004181
+625,heat-3d/heat-3d,init_array,"loop-vectorize - pgo-memop-opt - instcombine",96662520
+626,heat-3d/heat-3d,init_array,"slp-vectorizer - slp-vectorizer - loop-load-elim",96662520
+627,heat-3d/heat-3d,init_array,"libcalls-shrinkwrap - pgo-memop-opt - sroa - memcpyopt - slp-vectorizer - dse - memcpyopt - slp-vectorizer - mem2reg,loop-unroll<O3>",96004181
+628,heat-3d/heat-3d,init_array,"sccp",96662520
+629,heat-3d/heat-3d,init_array,"loop(indvars) - sccp - pgo-memop-opt - loop-load-elim - callsite-splitting - callsite-splitting - gvn",96662520
+630,heat-3d/heat-3d,init_array,"speculative-execution - lower-constant-intrinsics - bdce - sccp - sccp - sccp",96662520
+631,heat-3d/heat-3d,init_array,"callsite-splitting - lower-expect - loop-mssa(licm) - lower-constant-intrinsics - speculative-execution",96320851
+632,heat-3d/heat-3d,init_array,"lcssa - callsite-splitting - lower-constant-intrinsics - loop(indvars) - memcpyopt - libcalls-shrinkwrap",96662520
+633,heat-3d/heat-3d,init_array,"baseline",96652930
+634,heat-3d/heat-3d,kernel_heat_3d,"div-rem-pairs",99272221
+635,heat-3d/heat-3d,kernel_heat_3d,"gvn - instcombine",99272221
+636,heat-3d/heat-3d,kernel_heat_3d,"instcombine - loop-sink - instsimplify - libcalls-shrinkwrap - adce - mem2reg,loop-unroll<O3> - loop-distribute",73423069
+637,heat-3d/heat-3d,kernel_heat_3d,"correlated-propagation - loop-simplify",99272221
+638,heat-3d/heat-3d,kernel_heat_3d,"reassociate - lcssa - instcombine - sroa - loop(indvars) - loop-sink - lcssa - lower-constant-intrinsics - instsimplify - jump-threading",99853963
+639,heat-3d/heat-3d,kernel_heat_3d,"sccp - mem2reg,loop-unroll<O3> - aggressive-instcombine - libcalls-shrinkwrap - loop(loop-idiom)",73423069
+640,heat-3d/heat-3d,kernel_heat_3d,"jump-threading - lcssa - bdce - loop-sink - correlated-propagation - mem2reg",99272221
+641,heat-3d/heat-3d,kernel_heat_3d,"dse - loop-sink - div-rem-pairs - aggressive-instcombine - sroa",99272221
+642,heat-3d/heat-3d,kernel_heat_3d,"sccp - loop-mssa(licm)",115618705
+643,heat-3d/heat-3d,kernel_heat_3d,"lcssa - dse - loop-sink - loop(indvars) - slp-vectorizer - loop-sink - dse",99272221
+644,heat-3d/heat-3d,print_array,"loop-load-elim",73392729
+645,heat-3d/heat-3d,print_array,"pgo-memop-opt - instsimplify - sroa - mem2reg - mem2reg,loop-unroll<O3> - aggressive-instcombine - instsimplify - loop-sink",73392729
+646,heat-3d/heat-3d,print_array,"bdce - adce - pgo-memop-opt",73392729
+647,heat-3d/heat-3d,print_array,"mem2reg,loop-unroll<O3> - lcssa - loop-mssa(licm) - lower-expect",73176449
+648,heat-3d/heat-3d,print_array,"libcalls-shrinkwrap - loop-vectorize - lower-constant-intrinsics - adce - memcpyopt - div-rem-pairs",73392729
+649,heat-3d/heat-3d,print_array,"adce - speculative-execution",73392729
+650,heat-3d/heat-3d,print_array,"div-rem-pairs - alignment-from-assumptions - mldst-motion - alignment-from-assumptions - slp-vectorizer - loop-distribute - loop(indvars) - dse - pgo-memop-opt",73392729
+651,heat-3d/heat-3d,print_array,"loop-vectorize - jump-threading - loop-vectorize - float2int - loop-sink",73392729
+652,heat-3d/heat-3d,print_array,"lower-constant-intrinsics - libcalls-shrinkwrap - jump-threading - libcalls-shrinkwrap - memcpyopt",73392729
+653,heat-3d/heat-3d,print_array,"gvn - gvn - mldst-motion - div-rem-pairs - float2int - lower-expect - bdce - loop-distribute - mem2reg - gvn",73392729
+654,heat-3d/heat-3d,main,"mem2reg,loop-unroll<O3> - loop(loop-idiom) - loop-sink - pgo-memop-opt - gvn - dse",73176449
+655,heat-3d/heat-3d,main,"mem2reg - loop-simplify - loop(indvars) - adce - slp-vectorizer - loop(loop-idiom) - alignment-from-assumptions",73176449
+656,heat-3d/heat-3d,main,"lower-constant-intrinsics - mldst-motion - sroa - aggressive-instcombine - adce",73176449
+657,heat-3d/heat-3d,main,"adce - loop-mssa(licm) - loop(loop-deletion)",73176449
+658,heat-3d/heat-3d,main,"reassociate - loop-vectorize - lower-expect - aggressive-instcombine - sroa",73176449
+659,heat-3d/heat-3d,main,"loop(loop-idiom) - jump-threading - jump-threading - loop(loop-idiom) - loop(indvars) - mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3> - aggressive-instcombine - loop(loop-deletion) - libcalls-shrinkwrap",73176449
+660,heat-3d/heat-3d,main,"loop(indvars) - mldst-motion - pgo-memop-opt",73176449
+661,heat-3d/heat-3d,main,"instsimplify - loop(loop-deletion)",73176449
+662,heat-3d/heat-3d,main,"loop(indvars) - loop(loop-deletion) - libcalls-shrinkwrap - lcssa",73176449
+663,heat-3d/heat-3d,main,"lower-constant-intrinsics - mem2reg - sroa - slp-vectorizer - slp-vectorizer - loop(loop-idiom) - adce - loop-load-elim - mem2reg,loop-unroll<O3>",73176449
+664,2mm/2mm,init_array,"callsite-splitting - loop-mssa(licm) - alignment-from-assumptions - loop-vectorize - loop-simplify - libcalls-shrinkwrap - mldst-motion - memcpyopt",16737260
+665,2mm/2mm,init_array,"loop-load-elim - reassociate - loop-simplify - sroa - dse - lower-constant-intrinsics - loop(loop-deletion) - loop-mssa(licm) - sroa - mldst-motion",16737260
+666,2mm/2mm,init_array,"sccp - loop-mssa(licm) - instcombine - loop-load-elim",16816140
+667,2mm/2mm,init_array,"dse - loop-distribute - memcpyopt - loop-load-elim - loop(loop-deletion) - loop-load-elim - alignment-from-assumptions - loop-simplify",17035167
+668,2mm/2mm,init_array,"loop-sink - loop-distribute - aggressive-instcombine - memcpyopt",17035167
+669,2mm/2mm,init_array,"mem2reg - reassociate",17035167
+670,2mm/2mm,init_array,"instsimplify - lcssa - adce",17035167
+671,2mm/2mm,init_array,"gvn - gvn",17035167
+672,2mm/2mm,init_array,"bdce - instsimplify - div-rem-pairs - libcalls-shrinkwrap - loop-mssa(licm) - loop-distribute",16737260
+673,2mm/2mm,init_array,"loop-vectorize - mem2reg - instsimplify",17035167
+674,2mm/2mm,init_array,"baseline",17005207
+675,2mm/2mm,kernel_2mm,"alignment-from-assumptions - lcssa",17186950
+676,2mm/2mm,kernel_2mm,"instsimplify - reassociate - sccp - speculative-execution",17186950
+677,2mm/2mm,kernel_2mm,"mem2reg,loop-unroll<O3> - loop(indvars) - mem2reg - alignment-from-assumptions - jump-threading - memcpyopt - loop(loop-idiom) - sroa",13664550
+678,2mm/2mm,kernel_2mm,"mldst-motion - reassociate - loop-simplify - speculative-execution - jump-threading - mldst-motion - jump-threading - float2int - lower-expect - instsimplify",17186950
+679,2mm/2mm,kernel_2mm,"loop-vectorize - loop-sink",17186950
+680,2mm/2mm,kernel_2mm,"mem2reg - alignment-from-assumptions - loop(loop-idiom) - loop(loop-deletion) - float2int - loop(loop-idiom) - instsimplify - mem2reg - callsite-splitting - mem2reg",17186950
+681,2mm/2mm,kernel_2mm,"callsite-splitting - correlated-propagation",17186950
+682,2mm/2mm,kernel_2mm,"slp-vectorizer - mem2reg,loop-unroll<O3> - loop-simplify - reassociate - reassociate - loop(loop-idiom) - gvn - dse - lcssa",12919933
+683,2mm/2mm,kernel_2mm,"loop(indvars) - loop-sink - alignment-from-assumptions - speculative-execution - loop-simplify - bdce - mem2reg,loop-unroll<O3> - correlated-propagation - loop-simplify",13664550
+684,2mm/2mm,kernel_2mm,"lower-constant-intrinsics",17186950
+685,2mm/2mm,print_array,"pgo-memop-opt - reassociate - gvn - lower-constant-intrinsics - lower-constant-intrinsics - speculative-execution - instcombine - lower-expect - adce",12910943
+686,2mm/2mm,print_array,"loop-sink - correlated-propagation - sroa - dse - mem2reg,loop-unroll<O3> - float2int - libcalls-shrinkwrap - loop(loop-deletion) - lower-constant-intrinsics - loop-distribute",12910943
+687,2mm/2mm,print_array,"instsimplify - loop-mssa(licm) - pgo-memop-opt - bdce - sccp - loop-sink - mem2reg,loop-unroll<O3>",12879473
+688,2mm/2mm,print_array,"instcombine - speculative-execution - instsimplify - bdce - loop-simplify - loop-distribute - aggressive-instcombine - reassociate - slp-vectorizer - mem2reg",12910943
+689,2mm/2mm,print_array,"sccp - adce - instsimplify - mem2reg - reassociate",12910943
+690,2mm/2mm,print_array,"memcpyopt - gvn - memcpyopt",12910943
+691,2mm/2mm,print_array,"loop(loop-idiom) - loop-vectorize - pgo-memop-opt - mem2reg,loop-unroll<O3> - instcombine - correlated-propagation - loop-load-elim",12910943
+692,2mm/2mm,print_array,"sccp - gvn",12910943
+693,2mm/2mm,print_array,"loop-load-elim - dse - dse - lcssa - loop-mssa(licm) - pgo-memop-opt - callsite-splitting - bdce - loop-simplify",12879473
+694,2mm/2mm,print_array,"pgo-memop-opt - instsimplify - loop(loop-deletion) - loop-mssa(licm) - gvn - jump-threading - sccp",12879473
+695,2mm/2mm,main,"alignment-from-assumptions - alignment-from-assumptions - slp-vectorizer - lower-expect - bdce - loop-distribute - memcpyopt - loop-vectorize - lcssa",12879473
+696,2mm/2mm,main,"pgo-memop-opt - loop-load-elim - instsimplify - mldst-motion - alignment-from-assumptions - correlated-propagation - reassociate - mem2reg,loop-unroll<O3>",12879473
+697,2mm/2mm,main,"instcombine - callsite-splitting - lower-expect - sroa - lcssa - mldst-motion - reassociate",12879473
+698,2mm/2mm,main,"mem2reg,loop-unroll<O3> - dse - reassociate - aggressive-instcombine - loop(loop-idiom)",12879473
+699,2mm/2mm,main,"correlated-propagation - loop-distribute - loop-sink - loop(loop-deletion) - loop-vectorize - loop-simplify - gvn - correlated-propagation - sroa - bdce",12879473
+700,2mm/2mm,main,"mldst-motion - loop-distribute - jump-threading - aggressive-instcombine - instcombine",12879473
+701,2mm/2mm,main,"lower-expect - loop-vectorize - loop-vectorize",12879473
+702,2mm/2mm,main,"loop-vectorize - correlated-propagation",12879473
+703,2mm/2mm,main,"loop(loop-deletion) - libcalls-shrinkwrap - gvn - div-rem-pairs - loop-distribute",12879473
+704,2mm/2mm,main,"lcssa - aggressive-instcombine - callsite-splitting - aggressive-instcombine - instcombine",12879473
+705,jacobi-1d/jacobi-1d,init_array,"dse - lcssa",1103200
+706,jacobi-1d/jacobi-1d,init_array,"sroa - lower-constant-intrinsics - loop-load-elim - libcalls-shrinkwrap - loop-load-elim - loop-distribute - dse - loop(indvars) - adce",1103200
+707,jacobi-1d/jacobi-1d,init_array,"loop-sink - sroa - gvn - float2int",1103200
+708,jacobi-1d/jacobi-1d,init_array,"gvn - loop-load-elim - slp-vectorizer",1103200
+709,jacobi-1d/jacobi-1d,init_array,"bdce - speculative-execution - loop-distribute - alignment-from-assumptions",1103200
+710,jacobi-1d/jacobi-1d,init_array,"callsite-splitting - mem2reg,loop-unroll<O3> - adce - float2int - loop-distribute - instcombine",1103200
+711,jacobi-1d/jacobi-1d,init_array,"libcalls-shrinkwrap - adce - sroa - slp-vectorizer - instsimplify - memcpyopt - gvn",1103200
+712,jacobi-1d/jacobi-1d,init_array,"slp-vectorizer - loop-sink - loop(loop-idiom)",1103200
+713,jacobi-1d/jacobi-1d,init_array,"pgo-memop-opt - memcpyopt - pgo-memop-opt - slp-vectorizer",1103200
+714,jacobi-1d/jacobi-1d,init_array,"sroa - loop(indvars) - sroa - bdce - mem2reg - loop-mssa(licm) - lower-expect - dse - bdce",1103200
+715,jacobi-1d/jacobi-1d,init_array,"baseline",1102270
+716,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"mldst-motion - mldst-motion - instsimplify - pgo-memop-opt - loop-simplify - sroa - loop(loop-idiom)",1206918
+717,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"loop-load-elim - dse - loop-mssa(licm) - pgo-memop-opt - speculative-execution - callsite-splitting - aggressive-instcombine - loop-simplify",1206918
+718,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"loop(loop-idiom)",1206918
+719,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"adce - loop-distribute - gvn - pgo-memop-opt - slp-vectorizer - sroa - lcssa - bdce",1206918
+720,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"loop(indvars) - sccp - lower-expect - loop-mssa(licm) - dse - sroa",1206918
+721,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"aggressive-instcombine - sroa - lower-expect - loop-load-elim - callsite-splitting - dse - jump-threading - loop-mssa(licm)",1206918
+722,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"loop-load-elim - alignment-from-assumptions - mem2reg",1206918
+723,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"float2int - jump-threading - speculative-execution - loop-load-elim",1206918
+724,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"correlated-propagation - loop(indvars)",1206918
+725,jacobi-1d/jacobi-1d,kernel_jacobi_1d,"loop-vectorize - sccp - dse - loop(loop-idiom) - gvn - lcssa - loop-simplify - lower-expect - dse",1206918
+726,jacobi-1d/jacobi-1d,print_array,"sroa - loop-sink - loop(loop-idiom) - speculative-execution",1206298
+727,jacobi-1d/jacobi-1d,print_array,"mem2reg,loop-unroll<O3>",1206298
+728,jacobi-1d/jacobi-1d,print_array,"libcalls-shrinkwrap - float2int",1206298
+729,jacobi-1d/jacobi-1d,print_array,"alignment-from-assumptions - bdce - sccp - loop(loop-deletion) - lower-constant-intrinsics - loop(loop-deletion) - gvn - libcalls-shrinkwrap - libcalls-shrinkwrap",1206298
+730,jacobi-1d/jacobi-1d,print_array,"gvn - float2int - loop-simplify",1206298
+731,jacobi-1d/jacobi-1d,print_array,"correlated-propagation - speculative-execution - alignment-from-assumptions",1206298
+732,jacobi-1d/jacobi-1d,print_array,"lower-expect - pgo-memop-opt - loop-load-elim - div-rem-pairs - loop-distribute - mldst-motion - memcpyopt - reassociate - pgo-memop-opt",1206298
+733,jacobi-1d/jacobi-1d,print_array,"aggressive-instcombine - loop-mssa(licm) - slp-vectorizer - mem2reg - loop-vectorize - loop(loop-deletion) - memcpyopt",1206298
+734,jacobi-1d/jacobi-1d,print_array,"instcombine",1205368
+735,jacobi-1d/jacobi-1d,print_array,"lcssa - lower-constant-intrinsics - memcpyopt - callsite-splitting - jump-threading - bdce - dse - sccp - callsite-splitting",1206298
+736,jacobi-1d/jacobi-1d,main,"correlated-propagation - loop-distribute - instsimplify - memcpyopt - loop-sink - mldst-motion",1205368
+737,jacobi-1d/jacobi-1d,main,"bdce",1205368
+738,jacobi-1d/jacobi-1d,main,"mldst-motion - alignment-from-assumptions - mem2reg,loop-unroll<O3> - memcpyopt - speculative-execution",1205408
+739,jacobi-1d/jacobi-1d,main,"sccp - gvn - mem2reg - jump-threading",1205368
+740,jacobi-1d/jacobi-1d,main,"loop-distribute - loop-vectorize - libcalls-shrinkwrap",1205368
+741,jacobi-1d/jacobi-1d,main,"mem2reg - callsite-splitting - lower-constant-intrinsics - loop(loop-deletion)",1205368
+742,jacobi-1d/jacobi-1d,main,"loop(indvars) - loop-vectorize - loop-mssa(licm) - correlated-propagation - div-rem-pairs - libcalls-shrinkwrap - libcalls-shrinkwrap - lower-expect - mem2reg - loop(indvars)",1205368
+743,jacobi-1d/jacobi-1d,main,"lower-constant-intrinsics - lower-constant-intrinsics - speculative-execution - gvn - instcombine - instcombine - memcpyopt - alignment-from-assumptions",1205368
+744,jacobi-1d/jacobi-1d,main,"loop(loop-deletion) - loop-simplify - div-rem-pairs - float2int",1205368
+745,jacobi-1d/jacobi-1d,main,"loop-mssa(licm) - loop-mssa(licm) - correlated-propagation - float2int - callsite-splitting - loop(loop-deletion) - mldst-motion - loop(loop-idiom)",1205368
+746,adi/adi,init_array,"alignment-from-assumptions - libcalls-shrinkwrap - aggressive-instcombine - memcpyopt - loop-simplify - loop-distribute - instsimplify - libcalls-shrinkwrap",68434323
+747,adi/adi,init_array,"sroa - memcpyopt - slp-vectorizer - lcssa - slp-vectorizer - loop-load-elim - mem2reg,loop-unroll<O3> - adce",68260549
+748,adi/adi,init_array,"callsite-splitting - float2int - correlated-propagation - loop-load-elim - float2int",68434323
+749,adi/adi,init_array,"instsimplify - dse - pgo-memop-opt",68434323
+750,adi/adi,init_array,"alignment-from-assumptions - loop-sink - loop-simplify - mldst-motion - loop(loop-idiom)",68434323
+751,adi/adi,init_array,"libcalls-shrinkwrap",68434323
+752,adi/adi,init_array,"mem2reg - adce - instcombine - loop(loop-deletion) - loop(loop-deletion) - jump-threading - pgo-memop-opt - aggressive-instcombine - lcssa",68434323
+753,adi/adi,init_array,"lower-constant-intrinsics - reassociate - memcpyopt - sccp - speculative-execution - gvn - loop(loop-deletion) - bdce - loop-vectorize",68434323
+754,adi/adi,init_array,"dse",68434323
+755,adi/adi,init_array,"mldst-motion - div-rem-pairs - loop-mssa(licm) - loop(loop-idiom) - mem2reg - lower-constant-intrinsics - dse - pgo-memop-opt",68346686
+756,adi/adi,init_array,"baseline",68430523
+757,adi/adi,kernel_adi,"libcalls-shrinkwrap - dse - loop-vectorize - bdce - pgo-memop-opt - loop-load-elim - loop-load-elim - slp-vectorizer - lcssa",69165249
+758,adi/adi,kernel_adi,"loop-load-elim - lcssa - sroa - mem2reg - reassociate - loop(loop-idiom) - mldst-motion - adce - adce",69165249
+759,adi/adi,kernel_adi,"alignment-from-assumptions - slp-vectorizer - pgo-memop-opt - speculative-execution - loop-distribute - lower-constant-intrinsics - speculative-execution - pgo-memop-opt - loop(loop-idiom)",69165249
+760,adi/adi,kernel_adi,"loop-distribute - instcombine - speculative-execution",64616379
+761,adi/adi,kernel_adi,"gvn",56969145
+762,adi/adi,kernel_adi,"mem2reg",69165249
+763,adi/adi,kernel_adi,"loop(loop-idiom) - mldst-motion - lower-expect - loop-vectorize - loop-sink - libcalls-shrinkwrap - bdce - slp-vectorizer - slp-vectorizer",69165249
+764,adi/adi,kernel_adi,"pgo-memop-opt - instcombine - instsimplify - jump-threading - loop(loop-deletion)",64616379
+765,adi/adi,kernel_adi,"lower-expect - libcalls-shrinkwrap - loop-sink - slp-vectorizer - gvn",56969145
+766,adi/adi,kernel_adi,"alignment-from-assumptions - speculative-execution - instsimplify - lower-expect - slp-vectorizer - aggressive-instcombine - loop(loop-idiom) - float2int - div-rem-pairs - loop-sink",64616379
+767,adi/adi,print_array,"mldst-motion - correlated-propagation - loop(indvars) - loop-mssa(licm)",56927565
+768,adi/adi,print_array,"jump-threading - reassociate - float2int - mem2reg,loop-unroll<O3>",56959715
+769,adi/adi,print_array,"lower-expect - callsite-splitting - float2int",56959715
+770,adi/adi,print_array,"loop-sink - pgo-memop-opt - sccp - correlated-propagation - speculative-execution - pgo-memop-opt - bdce - float2int",56959715
+771,adi/adi,print_array,"mldst-motion",56959715
+772,adi/adi,print_array,"gvn - lower-constant-intrinsics - dse - sccp - loop-load-elim - reassociate - mem2reg - gvn - mem2reg - loop(indvars)",56959715
+773,adi/adi,print_array,"speculative-execution - mem2reg",56959715
+774,adi/adi,print_array,"libcalls-shrinkwrap - loop-distribute - loop-load-elim - loop(loop-idiom) - sccp",56959715
+775,adi/adi,print_array,"lower-constant-intrinsics - loop(indvars)",56959715
+776,adi/adi,print_array,"loop-simplify - gvn",56959715
+777,adi/adi,main,"speculative-execution - loop-simplify - loop-mssa(licm) - mldst-motion - lower-expect - instcombine - speculative-execution - dse - slp-vectorizer - libcalls-shrinkwrap",56927565
+778,adi/adi,main,"adce - reassociate - loop-simplify - memcpyopt - instsimplify - lower-constant-intrinsics - loop(loop-idiom) - lower-expect - loop-distribute",56927565
+779,adi/adi,main,"bdce - loop-mssa(licm) - sroa - correlated-propagation - speculative-execution - gvn - loop-simplify - loop-sink",56927565
+780,adi/adi,main,"reassociate - loop(loop-deletion) - loop-sink - gvn - loop-load-elim - slp-vectorizer - mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3> - loop-vectorize - correlated-propagation",56927565
+781,adi/adi,main,"alignment-from-assumptions",56927565
+782,adi/adi,main,"memcpyopt - lcssa - loop-mssa(licm) - loop-load-elim - loop-simplify - dse - loop(loop-idiom) - mem2reg,loop-unroll<O3>",56927565
+783,adi/adi,main,"reassociate - mem2reg - gvn - memcpyopt - sroa - instsimplify - lcssa - adce",56927565
+784,adi/adi,main,"speculative-execution - adce - float2int - sroa - lcssa - slp-vectorizer - loop-vectorize - loop-sink - aggressive-instcombine",56927645
+785,adi/adi,main,"adce - lower-expect - reassociate - loop-mssa(licm) - gvn - lcssa - callsite-splitting - lower-constant-intrinsics - loop-load-elim - loop-mssa(licm)",56927565
+786,adi/adi,main,"loop(loop-idiom) - libcalls-shrinkwrap - adce - correlated-propagation - loop-simplify - sccp - loop-vectorize - loop-vectorize",56927565
+787,jacobi-2d/jacobi-2d,init_array,"jump-threading - aggressive-instcombine - lower-constant-intrinsics - callsite-splitting - mem2reg - speculative-execution - loop(indvars) - loop-load-elim",48940763
+788,jacobi-2d/jacobi-2d,init_array,"memcpyopt",48940763
+789,jacobi-2d/jacobi-2d,init_array,"adce - lower-constant-intrinsics - speculative-execution - alignment-from-assumptions - mem2reg - reassociate - jump-threading",48940763
+790,jacobi-2d/jacobi-2d,init_array,"instsimplify",48940763
+791,jacobi-2d/jacobi-2d,init_array,"bdce - sccp",48940763
+792,jacobi-2d/jacobi-2d,init_array,"float2int - loop(loop-deletion) - loop-mssa(licm) - loop-mssa(licm) - aggressive-instcombine - div-rem-pairs - loop(loop-deletion)",48590655
+793,jacobi-2d/jacobi-2d,init_array,"reassociate - reassociate - loop-vectorize - bdce",48940763
+794,jacobi-2d/jacobi-2d,init_array,"loop(loop-deletion) - speculative-execution - reassociate - loop-mssa(licm) - lower-expect - mem2reg",48590655
+795,jacobi-2d/jacobi-2d,init_array,"alignment-from-assumptions - jump-threading - pgo-memop-opt",48940763
+796,jacobi-2d/jacobi-2d,init_array,"mem2reg,loop-unroll<O3> - reassociate - mem2reg - instcombine - lcssa",48940763
+797,jacobi-2d/jacobi-2d,init_array,"baseline",48912843
+798,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"instsimplify - loop-load-elim - jump-threading - lower-expect - sroa - loop-mssa(licm) - sccp - jump-threading",51054857
+799,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"dse - loop-mssa(licm) - div-rem-pairs - loop-vectorize - loop-vectorize - alignment-from-assumptions - speculative-execution - loop(loop-idiom) - correlated-propagation",51054857
+800,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"lcssa - loop-load-elim - loop-simplify - instcombine - loop-sink",52458035
+801,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"loop(indvars) - memcpyopt",52458035
+802,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"loop-distribute - loop-mssa(licm) - adce - loop(loop-deletion) - sroa",51054857
+803,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"lower-constant-intrinsics - alignment-from-assumptions",52458035
+804,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"aggressive-instcombine - libcalls-shrinkwrap - mem2reg,loop-unroll<O3> - loop(loop-idiom) - loop-vectorize - memcpyopt - div-rem-pairs - aggressive-instcombine - libcalls-shrinkwrap - jump-threading",52458035
+805,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"dse - speculative-execution - aggressive-instcombine - loop-load-elim - loop(indvars) - callsite-splitting - sccp",52458035
+806,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"lcssa - loop(loop-idiom) - aggressive-instcombine - div-rem-pairs - div-rem-pairs - loop-mssa(licm) - jump-threading - lower-expect - libcalls-shrinkwrap - dse",51054857
+807,jacobi-2d/jacobi-2d,kernel_jacobi_2d,"mldst-motion - loop-mssa(licm) - adce - lower-constant-intrinsics - pgo-memop-opt - loop(loop-idiom) - pgo-memop-opt - loop-distribute",51054857
+808,jacobi-2d/jacobi-2d,print_array,"callsite-splitting - lcssa - libcalls-shrinkwrap - lower-expect - loop-vectorize - loop-vectorize - div-rem-pairs - correlated-propagation",18446744073709551615
+809,jacobi-2d/jacobi-2d,print_array,"pgo-memop-opt - mem2reg,loop-unroll<O3> - aggressive-instcombine - loop(loop-deletion) - mem2reg - instcombine - bdce - loop-simplify - lcssa - dse",18446744073709551615
+810,jacobi-2d/jacobi-2d,print_array,"lower-constant-intrinsics - jump-threading - slp-vectorizer - speculative-execution - sroa - loop-distribute",18446744073709551615
+811,jacobi-2d/jacobi-2d,print_array,"loop-vectorize - slp-vectorizer - speculative-execution - lower-constant-intrinsics - mem2reg - loop-vectorize - libcalls-shrinkwrap - loop(indvars) - loop-mssa(licm) - bdce",50962477
+812,jacobi-2d/jacobi-2d,print_array,"loop-sink - mem2reg,loop-unroll<O3> - loop(loop-idiom) - loop(indvars) - mem2reg,loop-unroll<O3>",18446744073709551615
+813,jacobi-2d/jacobi-2d,print_array,"lower-expect - mem2reg,loop-unroll<O3> - loop-sink - reassociate - mem2reg - callsite-splitting - jump-threading - lower-constant-intrinsics",18446744073709551615
+814,jacobi-2d/jacobi-2d,print_array,"alignment-from-assumptions",18446744073709551615
+815,jacobi-2d/jacobi-2d,print_array,"instcombine - lower-expect - gvn - sccp - loop-simplify - speculative-execution - loop-sink - mem2reg - aggressive-instcombine",18446744073709551615
+816,jacobi-2d/jacobi-2d,print_array,"pgo-memop-opt - speculative-execution - loop(indvars) - slp-vectorizer - adce - div-rem-pairs - sroa",18446744073709551615
+817,jacobi-2d/jacobi-2d,print_array,"loop-distribute - alignment-from-assumptions - mem2reg - alignment-from-assumptions",18446744073709551615
+818,jacobi-2d/jacobi-2d,main,"loop-distribute - loop(indvars) - loop-sink - loop(indvars) - dse",50962477
+819,jacobi-2d/jacobi-2d,main,"instcombine - lower-constant-intrinsics - lcssa - reassociate - alignment-from-assumptions - lower-constant-intrinsics - sccp - mem2reg,loop-unroll<O3> - pgo-memop-opt - sroa",50962477
+820,jacobi-2d/jacobi-2d,main,"memcpyopt - memcpyopt - instsimplify",50962477
+821,jacobi-2d/jacobi-2d,main,"loop(loop-deletion) - libcalls-shrinkwrap - sccp - loop(indvars) - correlated-propagation - lcssa - jump-threading",50962477
+822,jacobi-2d/jacobi-2d,main,"loop-vectorize - mem2reg - aggressive-instcombine - loop-sink",50962477
+823,jacobi-2d/jacobi-2d,main,"loop-load-elim - aggressive-instcombine - loop-simplify - sccp - gvn - loop-mssa(licm) - mem2reg",50962477
+824,jacobi-2d/jacobi-2d,main,"mldst-motion - sroa - aggressive-instcombine - callsite-splitting - dse - libcalls-shrinkwrap",50962477
+825,jacobi-2d/jacobi-2d,main,"loop-distribute - loop-sink - loop-vectorize - alignment-from-assumptions - correlated-propagation - pgo-memop-opt - mem2reg,loop-unroll<O3> - mem2reg",50962477
+826,jacobi-2d/jacobi-2d,main,"reassociate - jump-threading - loop(loop-idiom) - aggressive-instcombine",50962477
+827,jacobi-2d/jacobi-2d,main,"memcpyopt - speculative-execution - loop-distribute - speculative-execution - sroa - alignment-from-assumptions - memcpyopt - loop(indvars) - loop-mssa(licm) - lower-expect",50962557
+828,covariance/covariance,init_array,"lcssa - instcombine - float2int - libcalls-shrinkwrap - callsite-splitting - loop-mssa(licm) - speculative-execution - sroa - jump-threading - memcpyopt",26844037
+829,covariance/covariance,init_array,"bdce - bdce - speculative-execution - bdce - lower-expect",26942892
+830,covariance/covariance,init_array,"loop(indvars) - memcpyopt - libcalls-shrinkwrap - callsite-splitting",26942892
+831,covariance/covariance,init_array,"speculative-execution - lcssa - loop-vectorize",26942892
+832,covariance/covariance,init_array,"libcalls-shrinkwrap - mem2reg,loop-unroll<O3> - aggressive-instcombine - gvn - reassociate",26942892
+833,covariance/covariance,init_array,"jump-threading - callsite-splitting - loop-mssa(licm)",26799817
+834,covariance/covariance,init_array,"instcombine - dse - instsimplify - lower-expect - adce - div-rem-pairs - float2int - loop-distribute",26942892
+835,covariance/covariance,init_array,"gvn - loop-load-elim",26942892
+836,covariance/covariance,init_array,"aggressive-instcombine - loop-distribute - lcssa",26942892
+837,covariance/covariance,init_array,"loop-sink",26942892
+838,covariance/covariance,init_array,"baseline",26934292
+839,covariance/covariance,kernel_covariance,"loop(loop-idiom) - instsimplify - loop-distribute - callsite-splitting",27698837
+840,covariance/covariance,kernel_covariance,"aggressive-instcombine - lcssa - dse - loop-distribute - loop(loop-deletion) - lower-constant-intrinsics - alignment-from-assumptions",27698837
+841,covariance/covariance,kernel_covariance,"adce - loop(indvars) - instsimplify - bdce - speculative-execution - slp-vectorizer - lower-expect - speculative-execution",27698837
+842,covariance/covariance,kernel_covariance,"lower-constant-intrinsics - aggressive-instcombine - slp-vectorizer - sroa - mldst-motion",27698837
+843,covariance/covariance,kernel_covariance,"sroa - memcpyopt - speculative-execution - loop-simplify - loop-sink - jump-threading - loop-vectorize - instcombine - lower-constant-intrinsics",27665197
+844,covariance/covariance,kernel_covariance,"lower-constant-intrinsics - bdce - instcombine - mldst-motion",27665197
+845,covariance/covariance,kernel_covariance,"lower-expect - callsite-splitting - loop-simplify - loop-sink",27698837
+846,covariance/covariance,kernel_covariance,"dse - slp-vectorizer - lower-constant-intrinsics - div-rem-pairs - loop(loop-idiom) - div-rem-pairs - speculative-execution",27698837
+847,covariance/covariance,kernel_covariance,"instcombine - div-rem-pairs - pgo-memop-opt - loop(loop-deletion)",27665197
+848,covariance/covariance,kernel_covariance,"dse - bdce - speculative-execution - loop(indvars) - loop-distribute - loop-load-elim - speculative-execution - gvn - slp-vectorizer",26384209
+849,covariance/covariance,print_array,"loop-distribute - loop(loop-deletion) - loop(loop-idiom)",26366539
+850,covariance/covariance,print_array,"libcalls-shrinkwrap",26366539
+851,covariance/covariance,print_array,"loop-vectorize",26366539
+852,covariance/covariance,print_array,"aggressive-instcombine - callsite-splitting - memcpyopt - correlated-propagation - speculative-execution - mem2reg,loop-unroll<O3> - correlated-propagation",26366539
+853,covariance/covariance,print_array,"bdce - loop-distribute - gvn - aggressive-instcombine - gvn - alignment-from-assumptions - reassociate - lcssa - mldst-motion",26366539
+854,covariance/covariance,print_array,"correlated-propagation - slp-vectorizer - div-rem-pairs - mldst-motion",26366539
+855,covariance/covariance,print_array,"mem2reg,loop-unroll<O3> - gvn - loop(loop-idiom) - instcombine - correlated-propagation - gvn - mem2reg,loop-unroll<O3> - bdce",26366539
+856,covariance/covariance,print_array,"loop-distribute - reassociate - reassociate - speculative-execution - reassociate - memcpyopt",26366539
+857,covariance/covariance,print_array,"loop-mssa(licm) - sroa - loop(loop-deletion) - bdce - mem2reg - loop-mssa(licm) - loop(loop-deletion) - loop(loop-deletion) - reassociate - sccp",26303589
+858,covariance/covariance,print_array,"instsimplify - loop-mssa(licm) - loop(loop-idiom) - div-rem-pairs - bdce - slp-vectorizer - sccp - mldst-motion",26303589
+859,covariance/covariance,main,"loop-distribute - lcssa - mem2reg,loop-unroll<O3> - slp-vectorizer - libcalls-shrinkwrap - slp-vectorizer",26303589
+860,covariance/covariance,main,"instsimplify - gvn - memcpyopt - loop-simplify - memcpyopt - loop-vectorize - float2int - slp-vectorizer - pgo-memop-opt",26303589
+861,covariance/covariance,main,"loop-vectorize - adce - memcpyopt",26303589
+862,covariance/covariance,main,"instsimplify",26303589
+863,covariance/covariance,main,"bdce - lcssa - reassociate - lower-expect - instcombine - mem2reg,loop-unroll<O3> - loop(loop-idiom) - div-rem-pairs",26303589
+864,covariance/covariance,main,"loop(indvars)",26303589
+865,covariance/covariance,main,"loop(indvars) - lower-expect - speculative-execution - sroa",26303669
+866,covariance/covariance,main,"adce - gvn - dse - mem2reg",26303589
+867,covariance/covariance,main,"lcssa - instcombine - instcombine - div-rem-pairs - speculative-execution - mem2reg,loop-unroll<O3> - pgo-memop-opt - loop-mssa(licm) - loop(loop-deletion) - sroa",26303589
+868,gesummv/gesummv,init_array,"adce - loop-sink - instcombine - instcombine - jump-threading - loop(indvars)",2769674
+869,gesummv/gesummv,init_array,"adce - loop-distribute - adce - jump-threading - loop-vectorize",2769674
+870,gesummv/gesummv,init_array,"loop-sink - pgo-memop-opt - instcombine - sroa - dse - loop(loop-deletion) - mem2reg,loop-unroll<O3>",2769674
+871,gesummv/gesummv,init_array,"bdce - instsimplify - div-rem-pairs - div-rem-pairs - mldst-motion - speculative-execution - loop(loop-idiom)",2769674
+872,gesummv/gesummv,init_array,"sccp - speculative-execution - callsite-splitting - libcalls-shrinkwrap - loop(loop-idiom) - loop(indvars) - lcssa - sccp",2769674
+873,gesummv/gesummv,init_array,"lcssa - loop-vectorize - sccp - mem2reg,loop-unroll<O3> - jump-threading",2769674
+874,gesummv/gesummv,init_array,"jump-threading - lcssa - loop-sink - libcalls-shrinkwrap - pgo-memop-opt - dse",2769674
+875,gesummv/gesummv,init_array,"sccp - slp-vectorizer - loop-mssa(licm) - callsite-splitting",2513518
+876,gesummv/gesummv,init_array,"loop-mssa(licm) - instcombine - lcssa - loop-load-elim - bdce",2605588
+877,gesummv/gesummv,init_array,"loop-mssa(licm) - instsimplify - loop(loop-deletion) - instsimplify - loop-load-elim - libcalls-shrinkwrap - pgo-memop-opt",2513518
+878,gesummv/gesummv,init_array,"baseline",2741464
+879,gesummv/gesummv,kernel_gesummv,"lcssa - callsite-splitting - loop-vectorize - reassociate - alignment-from-assumptions - mldst-motion",2543278
+880,gesummv/gesummv,kernel_gesummv,"loop(loop-deletion) - loop-sink - loop-load-elim - instcombine - lower-constant-intrinsics",2543278
+881,gesummv/gesummv,kernel_gesummv,"div-rem-pairs",2543278
+882,gesummv/gesummv,kernel_gesummv,"callsite-splitting - lower-constant-intrinsics - loop-vectorize - sccp",2543278
+883,gesummv/gesummv,kernel_gesummv,"loop(loop-idiom) - adce - loop(indvars) - slp-vectorizer - dse - instcombine",2543278
+884,gesummv/gesummv,kernel_gesummv,"sroa",2543278
+885,gesummv/gesummv,kernel_gesummv,"instsimplify - reassociate - libcalls-shrinkwrap - float2int - loop(indvars) - memcpyopt - div-rem-pairs",2543278
+886,gesummv/gesummv,kernel_gesummv,"sccp - alignment-from-assumptions - adce",2543278
+887,gesummv/gesummv,kernel_gesummv,"div-rem-pairs - loop-sink - instcombine - lcssa - loop-mssa(licm) - alignment-from-assumptions - jump-threading - mldst-motion - bdce - gvn",2536427
+888,gesummv/gesummv,kernel_gesummv,"loop-simplify - instcombine - sccp",2543278
+889,gesummv/gesummv,print_array,"adce - alignment-from-assumptions - libcalls-shrinkwrap - loop(loop-idiom) - loop-sink - callsite-splitting - memcpyopt - instsimplify - loop-mssa(licm)",2535807
+890,gesummv/gesummv,print_array,"mem2reg,loop-unroll<O3> - adce - mem2reg - loop-vectorize - loop-sink",2535807
+891,gesummv/gesummv,print_array,"libcalls-shrinkwrap - lower-constant-intrinsics - bdce - gvn - lcssa - loop-vectorize - float2int - dse - mldst-motion",2535807
+892,gesummv/gesummv,print_array,"memcpyopt",2535807
+893,gesummv/gesummv,print_array,"callsite-splitting - lower-constant-intrinsics - loop-simplify - instcombine - jump-threading - lower-constant-intrinsics",2534877
+894,gesummv/gesummv,print_array,"alignment-from-assumptions - sroa - float2int - sroa - jump-threading - instsimplify - mem2reg,loop-unroll<O3> - loop-vectorize - mem2reg - instsimplify",2535807
+895,gesummv/gesummv,print_array,"pgo-memop-opt - mldst-motion - gvn - reassociate - reassociate - sccp - lower-expect - instsimplify",2535807
+896,gesummv/gesummv,print_array,"sroa - slp-vectorizer - alignment-from-assumptions - loop(indvars) - callsite-splitting - bdce - reassociate",2534877
+897,gesummv/gesummv,print_array,"sccp",2535807
+898,gesummv/gesummv,print_array,"float2int - aggressive-instcombine - mem2reg,loop-unroll<O3> - loop-load-elim",2535807
+899,gesummv/gesummv,main,"sccp - pgo-memop-opt - bdce - lower-expect - div-rem-pairs - aggressive-instcombine - lcssa",2534877
+900,gesummv/gesummv,main,"gvn",2534877
+901,gesummv/gesummv,main,"loop-simplify - loop(indvars) - loop(loop-deletion) - speculative-execution - memcpyopt - speculative-execution - speculative-execution - reassociate - loop-load-elim - speculative-execution",2534957
+902,gesummv/gesummv,main,"float2int - gvn - loop-distribute - instcombine - reassociate - dse - instsimplify - jump-threading - memcpyopt - loop(loop-deletion)",2534877
+903,gesummv/gesummv,main,"sccp - reassociate - loop(indvars) - gvn - loop-simplify - div-rem-pairs",2534877
+904,gesummv/gesummv,main,"loop-mssa(licm) - lower-constant-intrinsics - aggressive-instcombine - loop-distribute - loop-sink - memcpyopt - div-rem-pairs - jump-threading - gvn - loop(loop-deletion)",2534877
+905,gesummv/gesummv,main,"loop-distribute - bdce",2534877
+906,gesummv/gesummv,main,"loop(loop-idiom) - lower-expect",2534877
+907,gesummv/gesummv,main,"dse - mem2reg - dse - loop-simplify - jump-threading - loop-distribute - loop-load-elim - libcalls-shrinkwrap - mldst-motion",2534877
+908,gesummv/gesummv,main,"aggressive-instcombine - reassociate - alignment-from-assumptions - float2int",2534877
+909,bicg/bicg,init_array,"loop(loop-deletion) - jump-threading - loop(loop-idiom) - div-rem-pairs - loop-vectorize - lower-expect - adce",3942540
+910,bicg/bicg,init_array,"slp-vectorizer - loop-vectorize - loop-vectorize - jump-threading - float2int - pgo-memop-opt - correlated-propagation - gvn - mem2reg - slp-vectorizer",3733775
+911,bicg/bicg,init_array,"slp-vectorizer - bdce - sroa - lcssa - loop(loop-idiom) - sroa - dse - loop-mssa(licm) - aggressive-instcombine",3639581
+912,bicg/bicg,init_array,"mem2reg,loop-unroll<O3> - callsite-splitting - lcssa - speculative-execution - reassociate - mldst-motion",3942540
+913,bicg/bicg,init_array,"callsite-splitting - loop(loop-deletion) - jump-threading - sccp - slp-vectorizer",3942540
+914,bicg/bicg,init_array,"mem2reg,loop-unroll<O3> - adce - sccp - instcombine - memcpyopt - lcssa",3942540
+915,bicg/bicg,init_array,"jump-threading",3942540
+916,bicg/bicg,init_array,"instsimplify - bdce - instcombine",3942540
+917,bicg/bicg,init_array,"correlated-propagation - loop-sink",3942540
+918,bicg/bicg,init_array,"lower-constant-intrinsics - gvn - adce",3733775
+919,bicg/bicg,init_array,"baseline",3874780
+920,bicg/bicg,kernel_bicg,"loop(loop-idiom)",3688621
+921,bicg/bicg,kernel_bicg,"loop(loop-idiom) - alignment-from-assumptions - bdce - dse",3688621
+922,bicg/bicg,kernel_bicg,"dse - mldst-motion",3688621
+923,bicg/bicg,kernel_bicg,"sccp - dse - loop-vectorize - lower-expect",3688621
+924,bicg/bicg,kernel_bicg,"memcpyopt - loop(loop-deletion) - loop(indvars) - loop-load-elim - loop-distribute - alignment-from-assumptions - adce - loop-vectorize - gvn - loop-vectorize",3572091
+925,bicg/bicg,kernel_bicg,"sccp - loop(indvars) - dse - gvn - div-rem-pairs - dse - sccp - correlated-propagation - loop-distribute - loop(loop-deletion)",3572091
+926,bicg/bicg,kernel_bicg,"loop-simplify - aggressive-instcombine - libcalls-shrinkwrap - mem2reg,loop-unroll<O3> - pgo-memop-opt",3679941
+927,bicg/bicg,kernel_bicg,"loop-load-elim - gvn - reassociate - mldst-motion - loop(indvars) - dse - bdce - dse - float2int",3572091
+928,bicg/bicg,kernel_bicg,"gvn - jump-threading - loop-distribute - mem2reg",3572091
+929,bicg/bicg,kernel_bicg,"loop(loop-idiom) - sroa",3688621
+930,bicg/bicg,print_array,"correlated-propagation - dse - slp-vectorizer - loop(loop-deletion) - adce - alignment-from-assumptions - reassociate",3570451
+931,bicg/bicg,print_array,"correlated-propagation - bdce - loop-load-elim - pgo-memop-opt - loop(loop-idiom)",3570451
+932,bicg/bicg,print_array,"reassociate - bdce - loop-vectorize - gvn - aggressive-instcombine - mem2reg - libcalls-shrinkwrap",3570451
+933,bicg/bicg,print_array,"alignment-from-assumptions - speculative-execution",3570451
+934,bicg/bicg,print_array,"sroa - loop-load-elim - dse",3570451
+935,bicg/bicg,print_array,"loop-sink - instsimplify - reassociate - instsimplify - loop-sink - loop(loop-deletion) - gvn",3570451
+936,bicg/bicg,print_array,"gvn - correlated-propagation - instcombine - alignment-from-assumptions",3567991
+937,bicg/bicg,print_array,"gvn - gvn",3570451
+938,bicg/bicg,print_array,"aggressive-instcombine - adce - loop-vectorize - jump-threading - instcombine - instsimplify - loop-mssa(licm)",3567991
+939,bicg/bicg,print_array,"gvn - alignment-from-assumptions - lower-expect - jump-threading",3570451
+940,bicg/bicg,main,"sroa - correlated-propagation - lower-expect - aggressive-instcombine - reassociate - sroa - libcalls-shrinkwrap",3567991
+941,bicg/bicg,main,"aggressive-instcombine - loop-load-elim - sccp - adce - bdce - mem2reg,loop-unroll<O3> - mldst-motion - lcssa",3567991
+942,bicg/bicg,main,"float2int - loop(loop-deletion) - jump-threading - mldst-motion - loop-load-elim - sccp - pgo-memop-opt - mldst-motion - reassociate - loop-simplify",3567991
+943,bicg/bicg,main,"memcpyopt - loop-distribute - loop-sink - lower-expect - aggressive-instcombine - bdce - loop-simplify - loop(loop-deletion)",3567991
+944,bicg/bicg,main,"slp-vectorizer - correlated-propagation - dse - instcombine - pgo-memop-opt",3567991
+945,bicg/bicg,main,"reassociate - sccp - loop(indvars)",3567991
+946,bicg/bicg,main,"gvn",3567991
+947,bicg/bicg,main,"mem2reg,loop-unroll<O3> - libcalls-shrinkwrap - dse - mem2reg,loop-unroll<O3> - div-rem-pairs - adce - loop-distribute",3567991
+948,bicg/bicg,main,"loop-simplify - bdce - instsimplify - sroa",3567991
+949,bicg/bicg,main,"correlated-propagation - loop-distribute - mem2reg - div-rem-pairs - mem2reg",3567991
+950,trisolv/trisolv,init_array,"slp-vectorizer - lower-constant-intrinsics - loop-sink - lcssa - loop-distribute - lower-expect - memcpyopt - loop-load-elim - loop-simplify - loop-mssa(licm)",2653033
+951,trisolv/trisolv,init_array,"lcssa - adce - speculative-execution - reassociate - loop(loop-idiom) - alignment-from-assumptions - lower-expect - loop-distribute - loop-vectorize - jump-threading",2994730
+952,trisolv/trisolv,init_array,"sroa",2994730
+953,trisolv/trisolv,init_array,"instcombine - lower-constant-intrinsics - gvn - pgo-memop-opt",2994730
+954,trisolv/trisolv,init_array,"adce - reassociate - loop(loop-idiom)",2994730
+955,trisolv/trisolv,init_array,"correlated-propagation - memcpyopt - aggressive-instcombine - loop-simplify",2994730
+956,trisolv/trisolv,init_array,"mem2reg,loop-unroll<O3> - libcalls-shrinkwrap - slp-vectorizer - float2int - libcalls-shrinkwrap - loop-mssa(licm) - reassociate - pgo-memop-opt",2701413
+957,trisolv/trisolv,init_array,"mem2reg - jump-threading",2994730
+958,trisolv/trisolv,init_array,"div-rem-pairs - loop-vectorize - callsite-splitting",2994730
+959,trisolv/trisolv,init_array,"jump-threading - slp-vectorizer - loop(loop-idiom) - lower-constant-intrinsics - sccp - sroa - memcpyopt",2994730
+960,trisolv/trisolv,init_array,"baseline",2978740
+961,trisolv/trisolv,kernel_trisolv,"loop(loop-deletion) - instsimplify - instcombine - mem2reg,loop-unroll<O3> - alignment-from-assumptions - lower-constant-intrinsics",2704693
+962,trisolv/trisolv,kernel_trisolv,"sroa - mem2reg,loop-unroll<O3> - loop(loop-deletion)",2704693
+963,trisolv/trisolv,kernel_trisolv,"pgo-memop-opt - float2int - instsimplify - reassociate",2704693
+964,trisolv/trisolv,kernel_trisolv,"div-rem-pairs - libcalls-shrinkwrap - loop-distribute - memcpyopt - loop-sink",2704693
+965,trisolv/trisolv,kernel_trisolv,"div-rem-pairs - loop-sink - reassociate - mem2reg,loop-unroll<O3>",2704693
+966,trisolv/trisolv,kernel_trisolv,"loop-mssa(licm) - mldst-motion - memcpyopt - div-rem-pairs - speculative-execution",2590713
+967,trisolv/trisolv,kernel_trisolv,"mem2reg - reassociate - bdce - lower-expect - jump-threading - loop-sink",2704693
+968,trisolv/trisolv,kernel_trisolv,"aggressive-instcombine - mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3> - dse - pgo-memop-opt - loop-simplify - loop-load-elim",2704693
+969,trisolv/trisolv,kernel_trisolv,"mldst-motion - memcpyopt - callsite-splitting - loop(loop-deletion) - mem2reg,loop-unroll<O3> - bdce - bdce",2704693
+970,trisolv/trisolv,kernel_trisolv,"memcpyopt - instsimplify - callsite-splitting - loop-mssa(licm) - loop-simplify - loop(indvars) - loop-vectorize - memcpyopt",2590713
+971,trisolv/trisolv,print_array,"lower-constant-intrinsics - loop(loop-idiom) - jump-threading",2589893
+972,trisolv/trisolv,print_array,"reassociate - speculative-execution - alignment-from-assumptions - speculative-execution - callsite-splitting - adce - loop-mssa(licm) - callsite-splitting - loop-load-elim - lower-constant-intrinsics",2589893
+973,trisolv/trisolv,print_array,"loop-mssa(licm) - sroa - mldst-motion - adce - alignment-from-assumptions - bdce - float2int - bdce - bdce",2589893
+974,trisolv/trisolv,print_array,"reassociate - instcombine",2588663
+975,trisolv/trisolv,print_array,"libcalls-shrinkwrap - instcombine - jump-threading - correlated-propagation - reassociate",2587023
+976,trisolv/trisolv,print_array,"loop-vectorize",2589893
+977,trisolv/trisolv,print_array,"instsimplify - loop(indvars) - loop(indvars) - adce",2588663
+978,trisolv/trisolv,print_array,"loop-load-elim - loop-sink - correlated-propagation",2589893
+979,trisolv/trisolv,print_array,"float2int - jump-threading",2589893
+980,trisolv/trisolv,print_array,"dse - correlated-propagation - loop-load-elim - alignment-from-assumptions - float2int - bdce - sroa - bdce - mldst-motion - memcpyopt",2589893
+981,trisolv/trisolv,main,"callsite-splitting - callsite-splitting - mem2reg - mem2reg - sroa - loop(indvars) - sccp",2587023
+982,trisolv/trisolv,main,"libcalls-shrinkwrap - gvn - reassociate - loop-simplify",2587023
+983,trisolv/trisolv,main,"loop-sink",2587023
+984,trisolv/trisolv,main,"sccp - correlated-propagation - libcalls-shrinkwrap - lcssa - correlated-propagation - loop-vectorize - slp-vectorizer - slp-vectorizer - gvn - loop(loop-idiom)",2587023
+985,trisolv/trisolv,main,"instsimplify - loop-load-elim - bdce - loop(loop-deletion)",2587023
+986,trisolv/trisolv,main,"memcpyopt",2587023
+987,trisolv/trisolv,main,"lcssa - memcpyopt",2587023
+988,trisolv/trisolv,main,"loop-mssa(licm) - speculative-execution - loop-sink - loop-load-elim - speculative-execution - loop(indvars) - correlated-propagation - memcpyopt - loop-load-elim - alignment-from-assumptions",2587103
+989,trisolv/trisolv,main,"sroa",2587023
+990,trisolv/trisolv,main,"loop-sink - lower-expect - libcalls-shrinkwrap - pgo-memop-opt",2587023
+991,seidel-2d/seidel-2d,init_array,"gvn - pgo-memop-opt - mem2reg - loop-vectorize - correlated-propagation - callsite-splitting - loop-distribute - gvn - libcalls-shrinkwrap",77350619
+992,seidel-2d/seidel-2d,init_array,"reassociate - loop-mssa(licm) - lower-expect - adce - loop-simplify - slp-vectorizer",76882190
+993,seidel-2d/seidel-2d,init_array,"libcalls-shrinkwrap",77350619
+994,seidel-2d/seidel-2d,init_array,"lcssa - loop(indvars) - sccp - speculative-execution - pgo-memop-opt - correlated-propagation",77350619
+995,seidel-2d/seidel-2d,init_array,"loop(loop-idiom) - loop-distribute - sroa",77350619
+996,seidel-2d/seidel-2d,init_array,"adce - loop-vectorize - mem2reg - loop-vectorize - loop(indvars) - aggressive-instcombine - sccp - callsite-splitting",77350619
+997,seidel-2d/seidel-2d,init_array,"lower-constant-intrinsics - gvn - loop-load-elim - float2int - libcalls-shrinkwrap",77350619
+998,seidel-2d/seidel-2d,init_array,"float2int",77350619
+999,seidel-2d/seidel-2d,init_array,"sccp",77350619
+1000,seidel-2d/seidel-2d,init_array,"mem2reg,loop-unroll<O3> - pgo-memop-opt - lower-constant-intrinsics - loop-simplify - loop-simplify - correlated-propagation",77350619
+1001,seidel-2d/seidel-2d,init_array,"baseline",77335019
+1002,seidel-2d/seidel-2d,kernel_seidel_2d,"reassociate - loop-simplify - libcalls-shrinkwrap - loop(loop-deletion) - loop-mssa(licm) - loop-load-elim - sccp",75578551
+1003,seidel-2d/seidel-2d,kernel_seidel_2d,"float2int - callsite-splitting - memcpyopt - mem2reg - sccp - alignment-from-assumptions",78773890
+1004,seidel-2d/seidel-2d,kernel_seidel_2d,"libcalls-shrinkwrap - lower-expect - sroa - instsimplify - lower-expect - loop(indvars) - lcssa - jump-threading - sroa - pgo-memop-opt",78773890
+1005,seidel-2d/seidel-2d,kernel_seidel_2d,"dse - callsite-splitting - speculative-execution - loop-load-elim - loop-sink - loop-vectorize - sroa",78773890
+1006,seidel-2d/seidel-2d,kernel_seidel_2d,"sroa - loop-load-elim",78773890
+1007,seidel-2d/seidel-2d,kernel_seidel_2d,"lower-constant-intrinsics - lower-expect - mem2reg,loop-unroll<O3> - loop-mssa(licm) - sroa - memcpyopt - lower-expect - reassociate - jump-threading - pgo-memop-opt",75578551
+1008,seidel-2d/seidel-2d,kernel_seidel_2d,"instsimplify - speculative-execution - gvn - loop(indvars) - dse",78773890
+1009,seidel-2d/seidel-2d,kernel_seidel_2d,"reassociate - correlated-propagation - instsimplify - lcssa - dse - div-rem-pairs - lower-expect - loop(loop-idiom) - pgo-memop-opt - loop(loop-idiom)",78773890
+1010,seidel-2d/seidel-2d,kernel_seidel_2d,"mldst-motion - mem2reg,loop-unroll<O3>",78773890
+1011,seidel-2d/seidel-2d,kernel_seidel_2d,"loop-mssa(licm) - mem2reg,loop-unroll<O3> - loop-sink - lcssa - instcombine - mldst-motion - sccp - sroa - mem2reg,loop-unroll<O3> - mem2reg",88511380
+1012,seidel-2d/seidel-2d,print_array,"loop(loop-deletion) - instsimplify - float2int - lower-constant-intrinsics - slp-vectorizer - instcombine - instcombine - div-rem-pairs - sroa - loop-load-elim",75543721
+1013,seidel-2d/seidel-2d,print_array,"instsimplify - loop(indvars) - mldst-motion - div-rem-pairs - pgo-memop-opt - loop-distribute - mldst-motion - slp-vectorizer - loop-sink",75543721
+1014,seidel-2d/seidel-2d,print_array,"slp-vectorizer",75543721
+1015,seidel-2d/seidel-2d,print_array,"alignment-from-assumptions - dse - loop-distribute - div-rem-pairs - mem2reg,loop-unroll<O3>",75543721
+1016,seidel-2d/seidel-2d,print_array,"speculative-execution - sccp - float2int - div-rem-pairs - lower-constant-intrinsics",75543721
+1017,seidel-2d/seidel-2d,print_array,"memcpyopt - loop-mssa(licm) - float2int - pgo-memop-opt - lower-constant-intrinsics - loop-distribute - mem2reg,loop-unroll<O3> - reassociate - instsimplify",75415371
+1018,seidel-2d/seidel-2d,print_array,"correlated-propagation - dse - bdce - loop-simplify - lcssa - bdce - adce",75543721
+1019,seidel-2d/seidel-2d,print_array,"loop-vectorize - pgo-memop-opt - loop-vectorize - callsite-splitting - lower-constant-intrinsics - lower-constant-intrinsics - bdce - loop(loop-deletion)",75543721
+1020,seidel-2d/seidel-2d,print_array,"lower-expect - lower-expect - mem2reg,loop-unroll<O3>",75543721
+1021,seidel-2d/seidel-2d,print_array,"callsite-splitting - loop-simplify - pgo-memop-opt - mem2reg,loop-unroll<O3> - lcssa - loop-vectorize - loop-load-elim - lcssa - loop-distribute - mem2reg",75543721
+1022,seidel-2d/seidel-2d,main,"mem2reg,loop-unroll<O3> - lower-constant-intrinsics - instcombine - div-rem-pairs - slp-vectorizer",75415371
+1023,seidel-2d/seidel-2d,main,"div-rem-pairs - loop(indvars) - loop-mssa(licm) - float2int - sccp - jump-threading - correlated-propagation - bdce",75415371
+1024,seidel-2d/seidel-2d,main,"sroa - lower-expect - memcpyopt - lower-expect - adce - loop-sink - lower-constant-intrinsics",75415371
+1025,seidel-2d/seidel-2d,main,"loop-distribute - memcpyopt - lower-expect - loop(indvars) - adce - correlated-propagation",75415371
+1026,seidel-2d/seidel-2d,main,"mem2reg - correlated-propagation - loop-load-elim - reassociate - sroa - sroa",75415371
+1027,seidel-2d/seidel-2d,main,"speculative-execution - loop(indvars) - speculative-execution",75415451
+1028,seidel-2d/seidel-2d,main,"adce - loop-vectorize - loop(loop-deletion) - mem2reg,loop-unroll<O3> - instsimplify - mem2reg,loop-unroll<O3> - libcalls-shrinkwrap",75415371
+1029,seidel-2d/seidel-2d,main,"reassociate - adce - loop(indvars) - loop-simplify - instcombine - instcombine - float2int - memcpyopt - adce - lcssa",75415371
+1030,seidel-2d/seidel-2d,main,"gvn - sroa - loop(loop-idiom)",75415371
+1031,seidel-2d/seidel-2d,main,"mldst-motion - reassociate - slp-vectorizer - lower-expect",75415371
+1032,3mm/3mm,init_array,"slp-vectorizer - loop-simplify - callsite-splitting - lower-constant-intrinsics",24604026
+1033,3mm/3mm,init_array,"mem2reg - mldst-motion",24604026
+1034,3mm/3mm,init_array,"sccp - mem2reg,loop-unroll<O3> - memcpyopt - mem2reg - mem2reg",24604026
+1035,3mm/3mm,init_array,"alignment-from-assumptions - lcssa",24604026
+1036,3mm/3mm,init_array,"dse - dse - alignment-from-assumptions - lower-expect - adce - bdce - loop(loop-idiom) - lower-constant-intrinsics",24604026
+1037,3mm/3mm,init_array,"sroa - adce",24604026
+1038,3mm/3mm,init_array,"loop-distribute - loop(loop-idiom) - dse - aggressive-instcombine - libcalls-shrinkwrap - pgo-memop-opt - gvn - libcalls-shrinkwrap - pgo-memop-opt - loop-load-elim",24604026
+1039,3mm/3mm,init_array,"bdce - pgo-memop-opt - loop-mssa(licm) - adce - loop-sink - memcpyopt - memcpyopt - aggressive-instcombine",24253304
+1040,3mm/3mm,init_array,"float2int - loop(loop-deletion) - callsite-splitting - slp-vectorizer - pgo-memop-opt - speculative-execution - div-rem-pairs - adce - adce - instsimplify",24604026
+1041,3mm/3mm,init_array,"jump-threading - aggressive-instcombine",24604026
+1042,3mm/3mm,init_array,"baseline",24574666
+1043,3mm/3mm,kernel_3mm,"aggressive-instcombine",24983944
+1044,3mm/3mm,kernel_3mm,"memcpyopt - instsimplify - loop-sink - instsimplify - mldst-motion - libcalls-shrinkwrap - float2int - reassociate - dse",24983944
+1045,3mm/3mm,kernel_3mm,"mem2reg,loop-unroll<O3> - instsimplify - mem2reg - loop(indvars) - alignment-from-assumptions - mldst-motion - loop-load-elim - loop-vectorize",18756062
+1046,3mm/3mm,kernel_3mm,"slp-vectorizer - aggressive-instcombine",24983944
+1047,3mm/3mm,kernel_3mm,"pgo-memop-opt - gvn - reassociate - callsite-splitting - div-rem-pairs - gvn - memcpyopt - lower-expect",23961528
+1048,3mm/3mm,kernel_3mm,"loop-vectorize",24983944
+1049,3mm/3mm,kernel_3mm,"aggressive-instcombine - speculative-execution - float2int - loop(indvars) - alignment-from-assumptions - loop-sink",24983944
+1050,3mm/3mm,kernel_3mm,"lower-expect - instcombine - correlated-propagation - lcssa - libcalls-shrinkwrap - pgo-memop-opt - instcombine - memcpyopt - loop(loop-idiom)",24983944
+1051,3mm/3mm,kernel_3mm,"mem2reg,loop-unroll<O3> - mem2reg,loop-unroll<O3>",18756062
+1052,3mm/3mm,kernel_3mm,"gvn - loop-simplify - lower-constant-intrinsics - div-rem-pairs - pgo-memop-opt - gvn - mem2reg,loop-unroll<O3> - loop-sink - div-rem-pairs",13090187
+1053,3mm/3mm,print_array,"lcssa - mldst-motion",13081877
+1054,3mm/3mm,print_array,"div-rem-pairs - pgo-memop-opt - div-rem-pairs - memcpyopt - aggressive-instcombine",13081877
+1055,3mm/3mm,print_array,"dse - callsite-splitting",13081877
+1056,3mm/3mm,print_array,"libcalls-shrinkwrap - callsite-splitting - loop-load-elim - pgo-memop-opt - loop-vectorize - correlated-propagation - loop-distribute - instsimplify - speculative-execution",13081877
+1057,3mm/3mm,print_array,"callsite-splitting - mem2reg,loop-unroll<O3> - sccp - loop-distribute - mem2reg,loop-unroll<O3> - loop(indvars) - libcalls-shrinkwrap - sroa - loop-simplify",13070147
+1058,3mm/3mm,print_array,"mem2reg - callsite-splitting - loop(indvars) - sroa - memcpyopt - aggressive-instcombine - mem2reg,loop-unroll<O3> - loop(loop-deletion) - adce",13070147
+1059,3mm/3mm,print_array,"adce - loop-mssa(licm) - callsite-splitting - correlated-propagation - correlated-propagation - instcombine - instsimplify - loop-sink - adce - loop(loop-deletion)",13067237
+1060,3mm/3mm,print_array,"loop(indvars) - float2int - lower-expect - lower-expect - loop(indvars) - loop(loop-deletion) - correlated-propagation - loop(indvars) - memcpyopt",13070147
+1061,3mm/3mm,print_array,"jump-threading - correlated-propagation - sroa - correlated-propagation - loop-mssa(licm)",13060607
+1062,3mm/3mm,print_array,"instcombine - aggressive-instcombine - loop(indvars) - lcssa - lower-expect - loop(indvars) - callsite-splitting - sccp - lcssa",13070147
+1063,3mm/3mm,main,"alignment-from-assumptions - correlated-propagation - sroa - adce - reassociate - mldst-motion - loop-sink",13060607
+1064,3mm/3mm,main,"loop-sink - loop(loop-deletion) - mem2reg,loop-unroll<O3> - instsimplify - float2int - pgo-memop-opt - float2int - callsite-splitting - div-rem-pairs",13060607
+1065,3mm/3mm,main,"alignment-from-assumptions - gvn - alignment-from-assumptions - jump-threading - instcombine - loop-sink - libcalls-shrinkwrap - aggressive-instcombine - callsite-splitting",13060607
+1066,3mm/3mm,main,"adce - loop(loop-idiom) - lcssa - lower-expect - loop-vectorize - loop-mssa(licm) - sccp - div-rem-pairs - instcombine - loop-vectorize",13060607
+1067,3mm/3mm,main,"loop(indvars) - mldst-motion - lcssa - mem2reg - lower-constant-intrinsics - lcssa - reassociate - loop-simplify - loop-simplify",13060607
+1068,3mm/3mm,main,"loop-sink - aggressive-instcombine - correlated-propagation - loop-distribute - instcombine - mem2reg - div-rem-pairs - loop-vectorize",13060607
+1069,3mm/3mm,main,"mldst-motion - adce - div-rem-pairs - libcalls-shrinkwrap - dse - loop(indvars) - div-rem-pairs - sroa - float2int",13060607
+1070,3mm/3mm,main,"loop(loop-idiom) - sroa - loop-load-elim - sccp - callsite-splitting - sroa - speculative-execution - div-rem-pairs",13060687
+1071,3mm/3mm,main,"instsimplify - loop(loop-deletion) - instcombine - alignment-from-assumptions - libcalls-shrinkwrap - loop-mssa(licm)",13060607
+1072,3mm/3mm,main,"lower-expect - slp-vectorizer - loop-mssa(licm) - instcombine - loop-mssa(licm) - loop-distribute - jump-threading - instsimplify - mldst-motion - dse",13060607
